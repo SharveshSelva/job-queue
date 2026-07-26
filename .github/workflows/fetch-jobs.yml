@@ -1,0 +1,52 @@
+name: Fetch jobs
+
+on:
+  schedule:
+    # Cron is UTC. Once a day keeps Apify usage inside the free tier.
+    - cron: "30 1 * * *"   # 07:00 IST daily
+  workflow_dispatch: {}        # lets you trigger it by hand from the Actions tab
+
+permissions:
+  contents: write              # required so the job can commit data/jobs.json
+
+concurrency:
+  group: fetch-jobs
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch and merge listings
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          SEARCH_TERMS: ${{ vars.SEARCH_TERMS || 'React Developer,Frontend Developer' }}
+          SEARCH_LOCATION: ${{ vars.SEARCH_LOCATION || 'Chennai' }}
+          SEARCH_COUNTRY: ${{ vars.SEARCH_COUNTRY || 'IN' }}
+          SEARCH_COUNTRY_NAME: ${{ vars.SEARCH_COUNTRY_NAME || 'india' }}
+          SOURCES: ${{ vars.SOURCES || 'indeed,wellfound,linkedin' }}
+          LINKEDIN_PAGES: ${{ vars.LINKEDIN_PAGES || '1' }}
+          LINKEDIN_EXPERIENCE: ${{ vars.LINKEDIN_EXPERIENCE }}
+          LINKEDIN_WORKPLACE: ${{ vars.LINKEDIN_WORKPLACE }}
+          LINKEDIN_LOW_APPLICANTS: ${{ vars.LINKEDIN_LOW_APPLICANTS }}
+          MAX_ITEMS_PER_SOURCE: ${{ vars.MAX_ITEMS_PER_SOURCE || '25' }}
+          MAX_AGE_DAYS: ${{ vars.MAX_AGE_DAYS || '45' }}
+        run: node scripts/fetch-jobs.mjs
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "job-queue-bot"
+          git config user.email "actions@github.com"
+          git add data/jobs.json
+          if git diff --staged --quiet; then
+            echo "No change — nothing to commit."
+          else
+            git commit -m "jobs: refresh $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi

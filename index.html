@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0E2A33">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Queue">
+<title>The queue</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="app">
+  <header class="bar">
+    <h1>The queue</h1>
+    <button id="refresh" class="ghost" aria-label="Reload listings">↻</button>
+  </header>
+
+  <p id="stamp" class="stamp">Loading…</p>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab on" data-tab="queue"   role="tab">Decide <span data-count="queue">0</span></button>
+    <button class="tab"    data-tab="saved"   role="tab">Saved <span data-count="saved">0</span></button>
+    <button class="tab"    data-tab="applied" role="tab">Applied <span data-count="applied">0</span></button>
+  </nav>
+
+  <div id="filters" class="chips">
+    <button class="chip" data-f="remote">Remote</button>
+    <button class="chip" data-f="fresh">Last 30d</button>
+    <button class="chip" data-pay="15000">₹15k+</button>
+    <button class="chip" data-pay="25000">₹25k+</button>
+    <button class="chip" data-pay="40000">₹40k+</button>
+  </div>
+
+  <div id="modes" class="modes">
+    <button class="mode on" data-mode="cards">Swipe</button>
+    <button class="mode"    data-mode="list">Scan list</button>
+  </div>
+
+  <main id="stage"></main>
+  <div id="actions" class="actions hidden">
+    <button class="act skip">Skip</button>
+    <button class="act save">Save</button>
+    <button class="act apply grow">Apply</button>
+  </div>
+</div>
+<div id="toast" class="toast hidden" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>
