@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-07T04:08:36.731Z",
+  "updated": "2026-08-08T03:06:59.674Z",
   "location": "Chennai",
   "terms": [
     "React Developer",
@@ -10,7 +10,7 @@
     "wellfound",
     "linkedin"
   ],
-  "count": 48,
+  "count": 47,
   "jobs": [
     {
       "id": "4c84hg1itfwdu",
@@ -840,23 +840,6 @@
       "term": "React Developer",
       "url": "https://www.linkedin.com/jobs/view/senior-developer-fsd-react-js-%2B-node-js-at-mycareernet-4409255386",
       "first_seen": "2026-07-26"
-    },
-    {
-      "id": "1osncs8a227ia",
-      "title": "Process Associate — Accounts Payable",
-      "company": "Genpact",
-      "loc": "Chennai",
-      "posted": "2026-06-24",
-      "type": "Full-time",
-      "remote": false,
-      "lo": null,
-      "hi": null,
-      "pay": "Not stated",
-      "exp": "—",
-      "term": "seed",
-      "url": "https://to.indeed.com/aa6mylm9b7cv",
-      "first_seen": "2026-07-27",
-      "source": "Indeed"
     }
   ]
 }
