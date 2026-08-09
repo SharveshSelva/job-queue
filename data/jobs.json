@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-08T03:06:59.674Z",
+  "updated": "2026-08-09T03:13:49.574Z",
   "location": "Chennai",
   "terms": [
     "React Developer",
@@ -10,7 +10,7 @@
     "wellfound",
     "linkedin"
   ],
-  "count": 47,
+  "count": 46,
   "jobs": [
     {
       "id": "4c84hg1itfwdu",
@@ -821,24 +821,6 @@
       "source": "Wellfound",
       "term": "React Developer",
       "url": "https://wellfound.com/jobs/4407203-founding-software-engineer-react-native-laravel-ai",
-      "first_seen": "2026-07-26"
-    },
-    {
-      "id": "1rz70yr1mfjyop",
-      "title": "Senior Developer - FSD(React JS + Node JS)",
-      "company": "MyCareernet",
-      "loc": "Chennai, Tamil Nadu, India",
-      "posted": "2026-06-25",
-      "type": "—",
-      "remote": false,
-      "lo": null,
-      "hi": null,
-      "pay": "Not stated",
-      "exp": "Senior Developer - FSD(React JS + Node JS)",
-      "applicants": null,
-      "source": "LinkedIn",
-      "term": "React Developer",
-      "url": "https://www.linkedin.com/jobs/view/senior-developer-fsd-react-js-%2B-node-js-at-mycareernet-4409255386",
       "first_seen": "2026-07-26"
     }
   ]
