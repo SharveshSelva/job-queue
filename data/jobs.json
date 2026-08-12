@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-11T03:16:41.153Z",
+  "updated": "2026-08-12T03:35:57.465Z",
   "location": "Chennai",
   "terms": [
     "React Developer",
@@ -10,7 +10,7 @@
     "wellfound",
     "linkedin"
   ],
-  "count": 46,
+  "count": 45,
   "jobs": [
     {
       "id": "4c84hg1itfwdu",
@@ -804,24 +804,6 @@
       "url": "https://to.indeed.com/aa8xwdby6sjs",
       "first_seen": "2026-07-27",
       "source": "Indeed"
-    },
-    {
-      "id": "1hrpomb9gl7e1",
-      "title": "Founding Software Engineer (React Native + Laravel + AI)",
-      "company": "Unimaa Software",
-      "loc": "Anywhere",
-      "posted": "2026-06-28",
-      "type": "—",
-      "remote": true,
-      "lo": 25000,
-      "hi": 33333,
-      "pay": "₹3L–₹4L a year",
-      "exp": "—",
-      "applicants": null,
-      "source": "Wellfound",
-      "term": "React Developer",
-      "url": "https://wellfound.com/jobs/4407203-founding-software-engineer-react-native-laravel-ai",
-      "first_seen": "2026-07-26"
     }
   ]
 }
