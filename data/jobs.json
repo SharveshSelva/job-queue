@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-12T03:35:57.465Z",
+  "updated": "2026-08-13T03:39:10.600Z",
   "location": "Chennai",
   "terms": [
     "React Developer",
@@ -10,7 +10,7 @@
     "wellfound",
     "linkedin"
   ],
-  "count": 45,
+  "count": 44,
   "jobs": [
     {
       "id": "4c84hg1itfwdu",
@@ -787,23 +787,6 @@
       "term": "React Developer",
       "url": "https://www.linkedin.com/jobs/view/full-stack-engineer-react-js-node-js-at-adnova-4435532598",
       "first_seen": "2026-07-26"
-    },
-    {
-      "id": "f4ivnm1ck8huu",
-      "title": "React.js Developer (Frontend)",
-      "company": "Cashkaro.com",
-      "loc": "Chennai",
-      "posted": "2026-06-29",
-      "type": "Full-time",
-      "remote": false,
-      "lo": null,
-      "hi": null,
-      "pay": "Not stated",
-      "exp": "—",
-      "term": "seed",
-      "url": "https://to.indeed.com/aa8xwdby6sjs",
-      "first_seen": "2026-07-27",
-      "source": "Indeed"
     }
   ]
 }
