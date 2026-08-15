@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-14T03:36:15.028Z",
+  "updated": "2026-08-15T02:31:17.333Z",
   "location": "Chennai",
   "terms": [
     "React Developer",
@@ -10,7 +10,7 @@
     "wellfound",
     "linkedin"
   ],
-  "count": 44,
+  "count": 40,
   "jobs": [
     {
       "id": "4c84hg1itfwdu",
@@ -717,76 +717,6 @@
       "url": "https://to.indeed.com/aacjg9nsdxlm",
       "first_seen": "2026-07-27",
       "source": "Indeed"
-    },
-    {
-      "id": "8gxc4r18bzpzf",
-      "title": "Web Developer Intern",
-      "company": "ETechDreams Solutions",
-      "loc": "Remote",
-      "posted": "2026-07-01",
-      "type": "Internship",
-      "remote": true,
-      "lo": null,
-      "hi": null,
-      "pay": "Not stated",
-      "exp": "Intern",
-      "term": "seed",
-      "url": "https://to.indeed.com/aalvsw47cqrh",
-      "first_seen": "2026-07-27",
-      "source": "Indeed"
-    },
-    {
-      "id": "2ijz1fz1elqr",
-      "title": "Full-Stack Developer — Vibe Coder (Claude Code)",
-      "company": "Ideal Tech Labs",
-      "loc": "Chennai",
-      "posted": "2026-07-01",
-      "type": "Full-time",
-      "remote": false,
-      "lo": 10000,
-      "hi": 15000,
-      "pay": "₹10,000–15,000/mo",
-      "exp": "Fresher OK",
-      "term": "seed",
-      "url": "https://to.indeed.com/aa8qpmbkm2st",
-      "first_seen": "2026-07-27",
-      "source": "Indeed"
-    },
-    {
-      "id": "am679t1ro6qp1",
-      "title": ".Net Full Stack Developer (Team Lead)",
-      "company": "VASHISTHA CONSULTING GROUP",
-      "loc": "Bengaluru, Karnataka (+5 others)",
-      "posted": "2026-07-01",
-      "type": "—",
-      "remote": false,
-      "lo": 125000,
-      "hi": 208333,
-      "pay": "₹15L–₹25L a year",
-      "exp": "—",
-      "applicants": null,
-      "source": "Wellfound",
-      "term": "Frontend Developer",
-      "url": "https://wellfound.com/jobs/4417483-net-full-stack-developer-team-lead",
-      "first_seen": "2026-07-26"
-    },
-    {
-      "id": "xlxmjmn284z6",
-      "title": "Full Stack Engineer (React Js & Node Js)",
-      "company": "adnova",
-      "loc": "Chennai, Tamil Nadu, India",
-      "posted": "2026-07-01",
-      "type": "—",
-      "remote": false,
-      "lo": null,
-      "hi": null,
-      "pay": "Not stated",
-      "exp": "—",
-      "applicants": null,
-      "source": "LinkedIn",
-      "term": "React Developer",
-      "url": "https://www.linkedin.com/jobs/view/full-stack-engineer-react-js-node-js-at-adnova-4435532598",
-      "first_seen": "2026-07-26"
     }
   ]
 }
