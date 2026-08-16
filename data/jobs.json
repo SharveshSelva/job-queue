@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-15T02:31:17.333Z",
+  "updated": "2026-08-16T02:39:45.003Z",
   "location": "Chennai",
   "terms": [
     "React Developer",
@@ -10,7 +10,7 @@
     "wellfound",
     "linkedin"
   ],
-  "count": 40,
+  "count": 39,
   "jobs": [
     {
       "id": "4c84hg1itfwdu",
@@ -700,23 +700,6 @@
       "term": "Frontend Developer",
       "url": "https://wellfound.com/jobs/4430579-tech-lead-full-stack-backend-focused",
       "first_seen": "2026-07-26"
-    },
-    {
-      "id": "1a9e6pp1nv20fp",
-      "title": "Frontend Developer (React JS)",
-      "company": "Sidharth Foundations & Housing",
-      "loc": "Teynampet, Chennai",
-      "posted": "2026-07-02",
-      "type": "Permanent",
-      "remote": false,
-      "lo": null,
-      "hi": null,
-      "pay": "Not stated",
-      "exp": "—",
-      "term": "seed",
-      "url": "https://to.indeed.com/aacjg9nsdxlm",
-      "first_seen": "2026-07-27",
-      "source": "Indeed"
     }
   ]
 }
