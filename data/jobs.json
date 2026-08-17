@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-16T02:39:45.003Z",
+  "updated": "2026-08-17T02:38:48.701Z",
   "location": "Chennai",
   "terms": [
     "React Developer",
@@ -10,7 +10,7 @@
     "wellfound",
     "linkedin"
   ],
-  "count": 39,
+  "count": 36,
   "jobs": [
     {
       "id": "4c84hg1itfwdu",
@@ -646,59 +646,6 @@
       "source": "Wellfound",
       "term": "React Developer",
       "url": "https://wellfound.com/jobs/4435505-fullstack-engineer-node-js-react-postgresql-clone",
-      "first_seen": "2026-07-26"
-    },
-    {
-      "id": "w584b21r3bhh2",
-      "title": "Business Development Associate",
-      "company": "Cornixe",
-      "loc": "Chennai",
-      "posted": "2026-07-03",
-      "type": "Permanent",
-      "remote": false,
-      "lo": null,
-      "hi": null,
-      "pay": "Not stated",
-      "exp": "—",
-      "term": "seed",
-      "url": "https://to.indeed.com/aatcgbdgn4zq",
-      "first_seen": "2026-07-27",
-      "source": "Indeed"
-    },
-    {
-      "id": "1gjedce176vpiq",
-      "title": "Front-end Developer (only for folks graduated in 2025 or earlier)",
-      "company": "POOLit",
-      "loc": "Anywhere",
-      "posted": "2026-07-03",
-      "type": "—",
-      "remote": true,
-      "lo": 33333,
-      "hi": 45833,
-      "pay": "₹4L–₹5.5L a year",
-      "exp": "—",
-      "applicants": null,
-      "source": "Wellfound",
-      "term": "React Developer",
-      "url": "https://wellfound.com/jobs/80848-front-end-developer-only-for-folks-graduated-in-2025-or-earlier",
-      "first_seen": "2026-07-26"
-    },
-    {
-      "id": "1e0hd771l9ln7z",
-      "title": "Tech Lead (Full Stack – Backend Focused)",
-      "company": "Purple Block",
-      "loc": "Bengaluru, Karnataka (+1 other)",
-      "posted": "2026-07-03",
-      "type": "—",
-      "remote": false,
-      "lo": 125000,
-      "hi": 166667,
-      "pay": "₹15L–₹20L a year",
-      "exp": "—",
-      "applicants": null,
-      "source": "Wellfound",
-      "term": "Frontend Developer",
-      "url": "https://wellfound.com/jobs/4430579-tech-lead-full-stack-backend-focused",
       "first_seen": "2026-07-26"
     }
   ]
