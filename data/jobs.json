@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-19T02:36:17.115Z",
+  "updated": "2026-08-20T02:35:42.249Z",
   "location": "Chennai",
   "terms": [
     "React Developer",
@@ -10,7 +10,7 @@
     "wellfound",
     "linkedin"
   ],
-  "count": 36,
+  "count": 35,
   "jobs": [
     {
       "id": "4c84hg1itfwdu",
@@ -628,24 +628,6 @@
       "source": "LinkedIn",
       "term": "React Developer",
       "url": "https://www.linkedin.com/jobs/view/software-engineer-react-at-u-s-bank-4436264970",
-      "first_seen": "2026-07-26"
-    },
-    {
-      "id": "52bwoh1w5fpdp",
-      "title": "Fullstack Engineer (Node.js, React, PostgreSQL)",
-      "company": "Botsplash",
-      "loc": "Anywhere",
-      "posted": "2026-07-06",
-      "type": "—",
-      "remote": true,
-      "lo": 66667,
-      "hi": 133333,
-      "pay": "₹8L–₹16L a year",
-      "exp": "—",
-      "applicants": null,
-      "source": "Wellfound",
-      "term": "React Developer",
-      "url": "https://wellfound.com/jobs/4435505-fullstack-engineer-node-js-react-postgresql-clone",
       "first_seen": "2026-07-26"
     }
   ]
