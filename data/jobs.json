@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-20T02:35:42.249Z",
+  "updated": "2026-08-21T02:41:39.939Z",
   "location": "Chennai",
   "terms": [
     "React Developer",
@@ -10,7 +10,7 @@
     "wellfound",
     "linkedin"
   ],
-  "count": 35,
+  "count": 33,
   "jobs": [
     {
       "id": "4c84hg1itfwdu",
@@ -592,42 +592,6 @@
       "source": "LinkedIn",
       "term": "React Developer",
       "url": "https://www.linkedin.com/jobs/view/senior-react-developer-assistant-vice-president-at-citi-4437080044",
-      "first_seen": "2026-07-26"
-    },
-    {
-      "id": "v3ir9qmu4wqy",
-      "title": "Founding Engineer Intern (Mobile/Full stack)",
-      "company": "Mindsnack",
-      "loc": "Bengaluru, Karnataka",
-      "posted": "2026-07-07",
-      "type": "—",
-      "remote": false,
-      "lo": 12500,
-      "hi": 20833,
-      "pay": "₹1.5L–₹2.5L a year",
-      "exp": "—",
-      "applicants": null,
-      "source": "Wellfound",
-      "term": "React Developer",
-      "url": "https://wellfound.com/jobs/3669793-founding-engineer-intern-mobile-full-stack",
-      "first_seen": "2026-07-26"
-    },
-    {
-      "id": "1qsoywk1hyiseo",
-      "title": "Software Engineer - React",
-      "company": "U.S. Bank",
-      "loc": "Chennai, Tamil Nadu, India",
-      "posted": "2026-07-07",
-      "type": "—",
-      "remote": false,
-      "lo": null,
-      "hi": null,
-      "pay": "Not stated",
-      "exp": "—",
-      "applicants": null,
-      "source": "LinkedIn",
-      "term": "React Developer",
-      "url": "https://www.linkedin.com/jobs/view/software-engineer-react-at-u-s-bank-4436264970",
       "first_seen": "2026-07-26"
     }
   ]
