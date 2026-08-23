@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-22T02:33:00.610Z",
+  "updated": "2026-08-23T02:42:25.098Z",
   "location": "Chennai",
   "terms": [
     "React Developer",
@@ -10,7 +10,7 @@
     "wellfound",
     "linkedin"
   ],
-  "count": 31,
+  "count": 29,
   "jobs": [
     {
       "id": "4c84hg1itfwdu",
@@ -521,41 +521,6 @@
       "source": "LinkedIn",
       "term": "React Developer",
       "url": "https://www.linkedin.com/jobs/view/react-js-developer-at-infosys-4437997748",
-      "first_seen": "2026-07-26"
-    },
-    {
-      "id": "3xx6jh165k58l",
-      "title": "Associate Software Engineer",
-      "company": "KLA",
-      "loc": "Chennai",
-      "posted": "2026-07-09",
-      "type": "Full-time",
-      "remote": false,
-      "lo": null,
-      "hi": null,
-      "pay": "Not stated",
-      "exp": "—",
-      "term": "seed",
-      "url": "https://to.indeed.com/aa2zd2pjkhxz",
-      "first_seen": "2026-07-27",
-      "source": "Indeed"
-    },
-    {
-      "id": "uve2vq1v9h9n2",
-      "title": "Frontend Developer - Next Js, React Js",
-      "company": "ULTIMEZ TECHNOLOGY",
-      "loc": "Anywhere",
-      "posted": "2026-07-09",
-      "type": "—",
-      "remote": true,
-      "lo": null,
-      "hi": null,
-      "pay": "Not stated",
-      "exp": "—",
-      "applicants": null,
-      "source": "Wellfound",
-      "term": "React Developer",
-      "url": "https://wellfound.com/jobs/4446069-frontend-developer-next-js-react-js",
       "first_seen": "2026-07-26"
     }
   ]
