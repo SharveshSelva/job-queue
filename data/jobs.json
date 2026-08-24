@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-23T02:42:25.098Z",
+  "updated": "2026-08-24T02:42:39.082Z",
   "location": "Chennai",
   "terms": [
     "React Developer",
@@ -10,7 +10,7 @@
     "wellfound",
     "linkedin"
   ],
-  "count": 29,
+  "count": 26,
   "jobs": [
     {
       "id": "4c84hg1itfwdu",
@@ -467,60 +467,6 @@
       "source": "Wellfound",
       "term": "React Developer",
       "url": "https://wellfound.com/jobs/776124-frontend-three-js-r3f-developer",
-      "first_seen": "2026-07-26"
-    },
-    {
-      "id": "nppl4z15tjsyd",
-      "title": "Frontend Developer (3+years) - Wordpress experience",
-      "company": "The Ninja Studio",
-      "loc": "Anywhere",
-      "posted": "2026-07-10",
-      "type": "—",
-      "remote": true,
-      "lo": 33333,
-      "hi": 50000,
-      "pay": "₹4L–₹6L a year",
-      "exp": "—",
-      "applicants": null,
-      "source": "Wellfound",
-      "term": "React Developer",
-      "url": "https://wellfound.com/jobs/4452830-frontend-developer-3-years-wordpress-experience",
-      "first_seen": "2026-07-26"
-    },
-    {
-      "id": "1rjqt671f68dbr",
-      "title": "Front End Developer (React)",
-      "company": "FundsIndia",
-      "loc": "Chennai, Tamil Nadu, India",
-      "posted": "2026-07-10",
-      "type": "—",
-      "remote": false,
-      "lo": null,
-      "hi": null,
-      "pay": "Not stated",
-      "exp": "—",
-      "applicants": null,
-      "source": "LinkedIn",
-      "term": "React Developer",
-      "url": "https://www.linkedin.com/jobs/view/front-end-developer-react-at-fundsindia-4435432966",
-      "first_seen": "2026-07-26"
-    },
-    {
-      "id": "1f84upxb2hbox",
-      "title": "React JS Developer",
-      "company": "Infosys",
-      "loc": "Chennai, Tamil Nadu, India",
-      "posted": "2026-07-10",
-      "type": "—",
-      "remote": false,
-      "lo": null,
-      "hi": null,
-      "pay": "Not stated",
-      "exp": "—",
-      "applicants": null,
-      "source": "LinkedIn",
-      "term": "React Developer",
-      "url": "https://www.linkedin.com/jobs/view/react-js-developer-at-infosys-4437997748",
       "first_seen": "2026-07-26"
     }
   ]
