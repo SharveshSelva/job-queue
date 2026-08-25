@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-24T02:42:39.082Z",
+  "updated": "2026-08-25T02:36:03.285Z",
   "location": "Chennai",
   "terms": [
     "React Developer",
@@ -10,7 +10,7 @@
     "wellfound",
     "linkedin"
   ],
-  "count": 26,
+  "count": 25,
   "jobs": [
     {
       "id": "4c84hg1itfwdu",
@@ -449,24 +449,6 @@
       "source": "Wellfound",
       "term": "Frontend Developer",
       "url": "https://wellfound.com/jobs/4463078-frontend-intern-angular-cybersecurity-clone",
-      "first_seen": "2026-07-26"
-    },
-    {
-      "id": "1b50slh59mrpz",
-      "title": "Frontend (Three.js / R3F) Developer",
-      "company": "Cloudworx Technologies",
-      "loc": "Bengaluru, Karnataka",
-      "posted": "2026-07-11",
-      "type": "—",
-      "remote": false,
-      "lo": 66667,
-      "hi": 200000,
-      "pay": "₹8L–₹24L a year",
-      "exp": "—",
-      "applicants": null,
-      "source": "Wellfound",
-      "term": "React Developer",
-      "url": "https://wellfound.com/jobs/776124-frontend-three-js-r3f-developer",
       "first_seen": "2026-07-26"
     }
   ]
