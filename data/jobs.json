@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-26T02:47:26.795Z",
+  "updated": "2026-08-27T11:44:42.311Z",
   "location": "Chennai",
   "terms": [
     "React Developer",
@@ -10,7 +10,7 @@
     "wellfound",
     "linkedin"
   ],
-  "count": 32,
+  "count": 34,
   "jobs": [
     {
       "id": "1j60mrcahp28g",
@@ -47,6 +47,24 @@
       "term": "React Developer",
       "url": "https://wellfound.com/jobs/4629851-senior-typescript-js-react-engineer-full-stack",
       "first_seen": "2026-08-26"
+    },
+    {
+      "id": "1jg3hfevlpps",
+      "title": "Senior Web Developer",
+      "company": "Uniblox",
+      "loc": "Anywhere",
+      "posted": "2026-08-22",
+      "type": "—",
+      "remote": true,
+      "lo": 100000,
+      "hi": 208333,
+      "pay": "₹12L–₹25L a year",
+      "exp": "—",
+      "applicants": null,
+      "source": "Wellfound",
+      "term": "Frontend Developer",
+      "url": "https://wellfound.com/jobs/2976059-senior-web-developer",
+      "first_seen": "2026-08-27"
     },
     {
       "id": "1rjhu621lrxf16",
@@ -155,6 +173,24 @@
       "term": "React Developer",
       "url": "https://wellfound.com/jobs/3233038-senior-frontend-developer-sde-3-mandatory-next-js-full-time-on-site",
       "first_seen": "2026-08-26"
+    },
+    {
+      "id": "uz4wjx10o47kb",
+      "title": "React Native Architect",
+      "company": "Centricity Wealthtech",
+      "loc": "Gurugram, Haryana",
+      "posted": "2026-07-29",
+      "type": "—",
+      "remote": false,
+      "lo": null,
+      "hi": null,
+      "pay": "Not stated",
+      "exp": "—",
+      "applicants": null,
+      "source": "Wellfound",
+      "term": "React Developer",
+      "url": "https://wellfound.com/jobs/4523136-react-native-architect",
+      "first_seen": "2026-08-27"
     },
     {
       "id": "11t28v2m3s9qa",
