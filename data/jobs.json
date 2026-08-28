@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-27T11:44:42.311Z",
+  "updated": "2026-08-28T13:08:27.699Z",
   "location": "Chennai",
   "terms": [
     "React Developer",
@@ -10,7 +10,7 @@
     "wellfound",
     "linkedin"
   ],
-  "count": 34,
+  "count": 33,
   "jobs": [
     {
       "id": "1j60mrcahp28g",
@@ -593,24 +593,6 @@
       "source": "LinkedIn",
       "term": "React Developer",
       "url": "https://www.linkedin.com/jobs/view/fullstack-developer-node%2B-reactjs-at-synechron-4431838210",
-      "first_seen": "2026-07-26"
-    },
-    {
-      "id": "fd7dsaj3mar4",
-      "title": "React Native Intern",
-      "company": "Wigle",
-      "loc": "Gurugram, Haryana",
-      "posted": "2026-07-14",
-      "type": "—",
-      "remote": false,
-      "lo": 25000,
-      "hi": 30000,
-      "pay": "₹3L–₹3.6L a year",
-      "exp": "—",
-      "applicants": null,
-      "source": "Wellfound",
-      "term": "React Developer",
-      "url": "https://wellfound.com/jobs/4465168-react-native-intern",
       "first_seen": "2026-07-26"
     }
   ]
