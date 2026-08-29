@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-28T13:08:27.699Z",
+  "updated": "2026-08-29T08:03:26.378Z",
   "location": "Chennai",
   "terms": [
     "React Developer",
@@ -10,7 +10,7 @@
     "wellfound",
     "linkedin"
   ],
-  "count": 33,
+  "count": 30,
   "jobs": [
     {
       "id": "1j60mrcahp28g",
@@ -542,58 +542,6 @@
       "url": "https://to.indeed.com/aaxf6wnknhly",
       "first_seen": "2026-07-27",
       "source": "Indeed"
-    },
-    {
-      "id": "1vvglpn1pr4gxd",
-      "title": "Full Stack Developer",
-      "company": "Daejoo Automotive India",
-      "loc": "Chennai",
-      "posted": "2026-07-15",
-      "type": "Permanent",
-      "remote": false,
-      "lo": null,
-      "hi": null,
-      "pay": "Not stated",
-      "exp": "—",
-      "term": "seed",
-      "url": "https://to.indeed.com/aa2xj8sshbs4",
-      "first_seen": "2026-07-27",
-      "source": "Indeed"
-    },
-    {
-      "id": "6x13uxwquk97",
-      "title": "React Frontend Developer (React / React Native)",
-      "company": "Upkarak Tech Solutions",
-      "loc": "Remote",
-      "posted": "2026-07-15",
-      "type": "Full-time",
-      "remote": true,
-      "lo": null,
-      "hi": null,
-      "pay": "Not stated",
-      "exp": "—",
-      "term": "seed",
-      "url": "https://to.indeed.com/aayfcxv8gjhz",
-      "first_seen": "2026-07-27",
-      "source": "Indeed"
-    },
-    {
-      "id": "5xh9wjae2bg",
-      "title": "Fullstack Developer( Node+ REactJS)",
-      "company": "Synechron",
-      "loc": "Greater Chennai Area",
-      "posted": "2026-07-15",
-      "type": "—",
-      "remote": false,
-      "lo": null,
-      "hi": null,
-      "pay": "Not stated",
-      "exp": "—",
-      "applicants": null,
-      "source": "LinkedIn",
-      "term": "React Developer",
-      "url": "https://www.linkedin.com/jobs/view/fullstack-developer-node%2B-reactjs-at-synechron-4431838210",
-      "first_seen": "2026-07-26"
     }
   ]
 }
