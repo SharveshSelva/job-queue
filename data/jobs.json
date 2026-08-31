@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-30T07:01:02.090Z",
+  "updated": "2026-08-31T07:16:28.483Z",
   "location": "Chennai",
   "terms": [
     "React Developer",
@@ -10,7 +10,7 @@
     "wellfound",
     "linkedin"
   ],
-  "count": 30,
+  "count": 29,
   "jobs": [
     {
       "id": "1j60mrcahp28g",
@@ -525,23 +525,6 @@
       "term": "React Developer",
       "url": "https://www.linkedin.com/jobs/view/developer-react-frontend-at-bnp-paribas-4424793459",
       "first_seen": "2026-07-26"
-    },
-    {
-      "id": "vi10yn1gy0dt1",
-      "title": "Front End Developer Intern",
-      "company": "Wentrite Technologies",
-      "loc": "Teynampet, Chennai",
-      "posted": "2026-07-17",
-      "type": "Internship",
-      "remote": false,
-      "lo": null,
-      "hi": null,
-      "pay": "Not stated",
-      "exp": "Intern",
-      "term": "seed",
-      "url": "https://to.indeed.com/aaxf6wnknhly",
-      "first_seen": "2026-07-27",
-      "source": "Indeed"
     }
   ]
 }
