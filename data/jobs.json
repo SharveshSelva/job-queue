@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-31T07:16:28.483Z",
+  "updated": "2026-09-01T06:29:10.854Z",
   "location": "Chennai",
   "terms": [
     "React Developer",
@@ -10,7 +10,7 @@
     "wellfound",
     "linkedin"
   ],
-  "count": 29,
+  "count": 28,
   "jobs": [
     {
       "id": "1j60mrcahp28g",
@@ -506,24 +506,6 @@
       "source": "LinkedIn",
       "term": "React Developer",
       "url": "https://www.linkedin.com/jobs/view/java-react-developer-at-infosys-4441795249",
-      "first_seen": "2026-07-26"
-    },
-    {
-      "id": "1oxjo9x1dgmsth",
-      "title": "Developer - React - Frontend",
-      "company": "BNP Paribas",
-      "loc": "Chennai, Tamil Nadu, India",
-      "posted": "2026-07-18",
-      "type": "—",
-      "remote": false,
-      "lo": null,
-      "hi": null,
-      "pay": "Not stated",
-      "exp": "—",
-      "applicants": null,
-      "source": "LinkedIn",
-      "term": "React Developer",
-      "url": "https://www.linkedin.com/jobs/view/developer-react-frontend-at-bnp-paribas-4424793459",
       "first_seen": "2026-07-26"
     }
   ]
