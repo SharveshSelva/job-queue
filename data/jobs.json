@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-01T06:29:10.854Z",
+  "updated": "2026-09-02T06:08:36.081Z",
   "location": "Chennai",
   "terms": [
     "React Developer",
@@ -10,7 +10,7 @@
     "wellfound",
     "linkedin"
   ],
-  "count": 28,
+  "count": 25,
   "jobs": [
     {
       "id": "1j60mrcahp28g",
@@ -454,58 +454,6 @@
       "source": "LinkedIn",
       "term": "React Developer",
       "url": "https://www.linkedin.com/jobs/view/reactjs-frontend-programmer-analyst-at-citi-4442078945",
-      "first_seen": "2026-07-26"
-    },
-    {
-      "id": "i4xqj7srsqvj",
-      "title": "Frontend Developer Intern (React & Next.js)",
-      "company": "Socialmoon",
-      "loc": "Remote",
-      "posted": "2026-07-19",
-      "type": "Internship",
-      "remote": true,
-      "lo": null,
-      "hi": null,
-      "pay": "Not stated",
-      "exp": "Intern",
-      "term": "seed",
-      "url": "https://to.indeed.com/aatxyl79yyjf",
-      "first_seen": "2026-07-27",
-      "source": "Indeed"
-    },
-    {
-      "id": "1wbg3hd1l8n88f",
-      "title": "Business Development Associate",
-      "company": "Formosa Synthetics",
-      "loc": "Chennai",
-      "posted": "2026-07-19",
-      "type": "Permanent",
-      "remote": false,
-      "lo": null,
-      "hi": null,
-      "pay": "Not stated",
-      "exp": "—",
-      "term": "seed",
-      "url": "https://to.indeed.com/aakkfkpnnntf",
-      "first_seen": "2026-07-27",
-      "source": "Indeed"
-    },
-    {
-      "id": "ird2if6xsqhb",
-      "title": "Java React Developer",
-      "company": "Infosys",
-      "loc": "Chennai, Tamil Nadu, India",
-      "posted": "2026-07-19",
-      "type": "—",
-      "remote": false,
-      "lo": null,
-      "hi": null,
-      "pay": "Not stated",
-      "exp": "—",
-      "applicants": null,
-      "source": "LinkedIn",
-      "term": "React Developer",
-      "url": "https://www.linkedin.com/jobs/view/java-react-developer-at-infosys-4441795249",
       "first_seen": "2026-07-26"
     }
   ]
