@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-03T06:06:32.660Z",
+  "updated": "2026-09-04T06:14:08.080Z",
   "location": "Chennai",
   "terms": [
     "React Developer",
@@ -10,7 +10,7 @@
     "wellfound",
     "linkedin"
   ],
-  "count": 21,
+  "count": 17,
   "jobs": [
     {
       "id": "1j60mrcahp28g",
@@ -314,76 +314,6 @@
       "url": "https://to.indeed.com/aahw8zm248vr",
       "first_seen": "2026-07-27",
       "source": "Indeed"
-    },
-    {
-      "id": "7z078c1jxhzl4",
-      "title": "React JS Developer",
-      "company": "NJ Graphica",
-      "loc": "Remote",
-      "posted": "2026-07-21",
-      "type": "Full-time",
-      "remote": true,
-      "lo": 12000,
-      "hi": 25000,
-      "pay": "₹12,000–25,000/mo",
-      "exp": "3 yrs preferred",
-      "term": "seed",
-      "url": "https://to.indeed.com/aayysx6z4p9d",
-      "first_seen": "2026-07-27",
-      "source": "Indeed"
-    },
-    {
-      "id": "19ldy1luqscif",
-      "title": "Frontend Web Developer (React / Next.js)",
-      "company": "ResumeSathi.com",
-      "loc": "Remote",
-      "posted": "2026-07-21",
-      "type": "Permanent",
-      "remote": true,
-      "lo": 17355,
-      "hi": 74820,
-      "pay": "₹2.1–9.0 LPA",
-      "exp": "Freshers welcome",
-      "term": "seed",
-      "url": "https://to.indeed.com/aag8pryzlvxs",
-      "first_seen": "2026-07-27",
-      "source": "Indeed"
-    },
-    {
-      "id": "7j5epq1kbk01s",
-      "title": "Senior Frontend Engineer (React)",
-      "company": "Noviga Automations",
-      "loc": "Anywhere",
-      "posted": "2026-07-21",
-      "type": "—",
-      "remote": true,
-      "lo": 83333,
-      "hi": 116667,
-      "pay": "₹10L–₹14L a year",
-      "exp": "—",
-      "applicants": null,
-      "source": "Wellfound",
-      "term": "React Developer",
-      "url": "https://wellfound.com/jobs/4493227-senior-frontend-engineer-react",
-      "first_seen": "2026-07-26"
-    },
-    {
-      "id": "1blbf1d68eyz",
-      "title": "React Developer",
-      "company": "Virtusa",
-      "loc": "Chennai, Tamil Nadu, India",
-      "posted": "2026-07-21",
-      "type": "—",
-      "remote": false,
-      "lo": null,
-      "hi": null,
-      "pay": "Not stated",
-      "exp": "—",
-      "applicants": null,
-      "source": "LinkedIn",
-      "term": "React Developer",
-      "url": "https://www.linkedin.com/jobs/view/react-developer-at-virtusa-4440477034",
-      "first_seen": "2026-07-26"
     }
   ]
 }
