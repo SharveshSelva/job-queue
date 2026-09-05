@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04T06:14:08.080Z",
+  "updated": "2026-09-05T06:02:30.434Z",
   "location": "Chennai",
   "terms": [
     "React Developer",
@@ -10,7 +10,7 @@
     "wellfound",
     "linkedin"
   ],
-  "count": 17,
+  "count": 15,
   "jobs": [
     {
       "id": "1j60mrcahp28g",
@@ -278,40 +278,6 @@
       "exp": "Proven experience",
       "term": "seed",
       "url": "https://to.indeed.com/aa4yfvvfn8nx",
-      "first_seen": "2026-07-27",
-      "source": "Indeed"
-    },
-    {
-      "id": "u3b5jh16r8srt",
-      "title": "Frontend Developer (React.js)",
-      "company": "EITB Global Infosolutions",
-      "loc": "Chennai",
-      "posted": "2026-07-22",
-      "type": "Permanent",
-      "remote": false,
-      "lo": 41667,
-      "hi": 41667,
-      "pay": "Up to ₹5 LPA",
-      "exp": "2–4 yrs",
-      "term": "seed",
-      "url": "https://to.indeed.com/aahw6kq9f8yj",
-      "first_seen": "2026-07-27",
-      "source": "Indeed"
-    },
-    {
-      "id": "dbz6z8pke8gi",
-      "title": "Web Developer",
-      "company": "Adaptt Localization",
-      "loc": "Remote",
-      "posted": "2026-07-22",
-      "type": "Permanent",
-      "remote": true,
-      "lo": null,
-      "hi": null,
-      "pay": "Not stated",
-      "exp": "—",
-      "term": "seed",
-      "url": "https://to.indeed.com/aahw8zm248vr",
       "first_seen": "2026-07-27",
       "source": "Indeed"
     }
