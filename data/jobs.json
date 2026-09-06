@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-05T06:02:30.434Z",
+  "updated": "2026-09-06T06:14:24.104Z",
   "location": "Chennai",
   "terms": [
     "React Developer",
@@ -10,7 +10,7 @@
     "wellfound",
     "linkedin"
   ],
-  "count": 15,
+  "count": 14,
   "jobs": [
     {
       "id": "1j60mrcahp28g",
@@ -263,23 +263,6 @@
       "term": "React Developer",
       "url": "https://www.linkedin.com/jobs/view/r-d-senior-engineer-react-frontend-engineer-india-development-center-at-hitachi-energy-4427920171",
       "first_seen": "2026-07-26"
-    },
-    {
-      "id": "zy5por7tui47",
-      "title": "Frontend React.js Developer",
-      "company": "IITIL",
-      "loc": "Remote",
-      "posted": "2026-07-23",
-      "type": "Permanent",
-      "remote": true,
-      "lo": null,
-      "hi": null,
-      "pay": "Not stated",
-      "exp": "Proven experience",
-      "term": "seed",
-      "url": "https://to.indeed.com/aa4yfvvfn8nx",
-      "first_seen": "2026-07-27",
-      "source": "Indeed"
     }
   ]
 }
