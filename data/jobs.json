@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-07T09:28:13.897Z",
+  "updated": "2026-09-07T09:39:51.253Z",
   "location": "Chennai",
   "terms": [
     "React Developer",
@@ -19,7 +19,7 @@
     "wwr",
     "keka"
   ],
-  "count": 166,
+  "count": 168,
   "jobs": [
     {
       "id": "opsl15lgqyn",
@@ -524,6 +524,48 @@
       "loInr": 638000,
       "hiInr": 1268667,
       "cur": "USD"
+    },
+    {
+      "id": "198bo171ez6njl",
+      "title": "Product Engineer - Frontend (all genders)",
+      "company": "Koppla",
+      "loc": "Berlin (hybrid)",
+      "posted": "2026-09-07",
+      "type": "Experienced, Permanent, Full time",
+      "remote": false,
+      "lo": null,
+      "hi": null,
+      "loInr": null,
+      "hiInr": null,
+      "cur": null,
+      "pay": "Not stated",
+      "exp": "—",
+      "applicants": null,
+      "source": "Arbeitnow",
+      "term": "React Developer",
+      "url": "https://www.arbeitnow.com/jobs/companies/koppla/product-engineer-frontend-all-genders-berlin-hybrid-115094",
+      "first_seen": "2026-09-07"
+    },
+    {
+      "id": "aqt4eq1r32wua",
+      "title": "Senior Software Developer (m/f/d) in CI",
+      "company": "Checkmk GmbH",
+      "loc": "Munich",
+      "posted": "2026-09-07",
+      "type": "Experienced, Permanent, Full time",
+      "remote": false,
+      "lo": null,
+      "hi": null,
+      "loInr": null,
+      "hiInr": null,
+      "cur": null,
+      "pay": "Not stated",
+      "exp": "—",
+      "applicants": null,
+      "source": "Arbeitnow",
+      "term": "React Developer",
+      "url": "https://www.arbeitnow.com/jobs/companies/checkmk-gmbh/senior-software-developer-in-ci-munich-128295",
+      "first_seen": "2026-09-07"
     },
     {
       "id": "1lp6vimkc6oqw",
