@@ -8,7 +8,7 @@ No server. No monthly bill. Nothing to keep running.
 
 ```
 GitHub Actions (cron, twice daily)
-        │  runs an Apify job-scraper actor
+        │  pulls free job-board APIs (Apify is optional, off by default)
         ▼
    data/jobs.json      ← committed back to the repo
         │
@@ -33,7 +33,11 @@ git remote add origin https://github.com/YOUR-USERNAME/job-queue.git
 git push -u origin main
 ```
 
-### 2. Add your Apify token
+### 2. Add your Apify token — optional, skip this if you're only using free sources
+
+The default `SOURCES` list is entirely free job-board APIs — no key, no account, nothing
+to top up. This step is only needed if you turn on a paid Apify source (see
+[Apify sources](#apify-sources-optional-cost-credits) below).
 
 Get it from **Apify Console → Settings → Integrations → Personal API token**.
 
@@ -77,7 +81,9 @@ switch back to it.
 
 ### 6. Run it once by hand
 
-**Actions → Fetch jobs → Run workflow.** Confirms the token works without waiting for the cron.
+**Actions → Fetch jobs → Run workflow.** Populates `data/jobs.json` for the first time
+without waiting for the cron. Works with no `APIFY_TOKEN` at all if you're only running
+free sources.
 
 ---
 
@@ -87,7 +93,7 @@ switch back to it.
 
 | Variable | Default | Notes |
 |---|---|---|
-| `SOURCES` | `indeed,wellfound,linkedin` | Which job boards to pull from — see below |
+| `SOURCES` | free sources (see below) | Which job boards to pull from — see below |
 | `SEARCH_TERMS` | `React Developer,Frontend Developer` | Comma separated. One actor run **per term per source**. |
 | `SEARCH_LOCATION` | `Chennai` | Use `Remote` for remote-only |
 | `SEARCH_COUNTRY` | `IN` | ISO-2, used by the Indeed actor |
@@ -97,13 +103,74 @@ switch back to it.
 
 ### Sources
 
+**Free sources run by default — no Apify credits, no account, nothing to top up.**
+Apify sources are opt-in.
+
+| id | Source | Cost |
+|---|---|---|
+| `greenhouse` | company boards via `boards-api.greenhouse.io` | free |
+| `lever` | company boards via `api.lever.co` | free |
+| `ashby` | company boards via `api.ashbyhq.com` | free |
+| `smartrecruiters` | company boards | free |
+| `remoteok` | global remote aggregator | free |
+| `remotive` | global remote aggregator | free |
+| `arbeitnow` | global aggregator | free |
+| `hn` | HN "Who is Hiring" via Algolia | free |
+| `jobicy` | remote aggregator | free |
+| `himalayas` | remote aggregator | free |
+| `wwr` | We Work Remotely (RSS) | free |
+| `workday` | company tenants — needs `WORKDAY_TENANTS`, empty by default | free |
+| `keka` | Indian ATS, company boards | free |
+
+**Freshteam and Zoho Recruit were investigated and dropped** — both only expose job data
+through an authenticated API (confirmed 401 on the real endpoint), no free JSON path exists.
+**Darwinbox's endpoint is real** (verified live via curl with a browser User-Agent) but sits
+behind Cloudflare bot mitigation that blocks Node's `fetch` specifically — the same client
+GitHub Actions runs — so it's not wired into `SOURCES` even though the code for it exists in
+`free-sources.mjs` (kept in case it's ever fetched through something Cloudflare doesn't flag).
+
+### Adding companies
+
+Company-board sources need a slug per company — edit `COMPANIES` in
+`scripts/free-sources.mjs`. The slug is the last path segment of the careers URL:
+`boards.greenhouse.io/razorpaysoftwareprivatelimited` → `razorpaysoftwareprivatelimited`.
+
+**A wrong slug fails silently during the real fetch.** Check them with:
+
+```bash
+node scripts/verify-sources.mjs
+```
+
+That hits every free source and every slug live, prints what each returns, and lists
+the dead ones. Costs nothing. Run it whenever you add companies.
+
+### Apify budget guard
+
+Apify sources are **off by default** and capped. `APIFY_BUDGET_USD` (default **$2.00**) is a
+hard monthly ceiling, tracked in `data/usage.json` and committed with each run.
+
+Before every paid call the script checks whether the *projected worst-case cost* still fits —
+not merely whether budget remains. A call that could overshoot is skipped rather than started.
+Verified: with a $2.00 cap it stops at $1.92 and never crosses.
+
+The ledger resets on the 1st of each calendar month. Free sources are never counted and never
+blocked.
+
+```bash
+gh variable set APIFY_BUDGET_USD --body "1.50"    # tighten it
+```
+
+### Apify sources (optional, cost credits)
+
+**All off by default.** None of these run unless you explicitly add them to `SOURCES`.
+
 | id | Actor | Why |
 |---|---|---|
-| `indeed` | `misceres/indeed-scraper` | Broadest coverage in India. **On by default.** |
-| `wellfound` | `orgupdate/wellfound-jobs-scraper` | Startup roles — usually the best listings here. **On by default.** |
+| `indeed` | `misceres/indeed-scraper` | Broadest coverage in India. |
+| `wellfound` | `orgupdate/wellfound-jobs-scraper` | Startup roles — usually the best listings here. |
 | `google` | `orgupdate/google-jobs-scraper` | Aggregates LinkedIn, Glassdoor, ZipRecruiter, careers pages. Widest net, noisiest. |
 | `indeed_alt` | `borderline/indeed-scraper` | Fallback if `indeed` starts failing |
-| `linkedin` | `aligned_safe/linkedin-jobs-scraper-2026` | Public listings, **no login needed**. **On by default.** |
+| `linkedin` | `aligned_safe/linkedin-jobs-scraper-2026` | Public listings, **no login needed**. |
 
 Turn sources on by listing them: `gh variable set SOURCES --body "indeed,wellfound,google"`
 
@@ -129,12 +196,14 @@ no structured job fields to normalise. Useful for other things, not this.
 
 ### Cost
 
-Every source runs once per search term. With the defaults — 3 sources × 2 terms × 25 items
-— that's about 150 results a day, comfortably inside Apify's $5/month free credit.
+The default `SOURCES` list is all free — **$0, always**, regardless of how many terms or
+how often the cron runs. `MAX_ITEMS_PER_SOURCE` and Apify's billing only come into play if
+you opt into a paid source (see above). Company-board and aggregator sources fetch once per
+run and aren't metered at all.
 
-Adding sources or terms multiplies this. 4 sources × 4 terms × 50 items is 800 results/day,
-which will burn through the free tier. `MAX_ITEMS_PER_SOURCE` is passed to Apify as a hard
-billing cap, so raising it is the main lever to watch.
+If you do turn on Apify sources: each one runs once per search term, so cost scales as
+sources × terms × `MAX_ITEMS_PER_SOURCE`. `APIFY_BUDGET_USD` (see below) is the actual
+backstop — it stops paid calls before they'd exceed the monthly cap, independent of this math.
 
 ### Schedule
 
@@ -172,7 +241,7 @@ keeps its original `first_seen` date. Each card shows which board it came from.
 |---|---|
 | GitHub Actions | Free (2,000 min/month on public repos; this uses ~2 min/day) |
 | GitHub Pages | Free |
-| Apify | Free tier is $5/month of credits. Defaults sit well inside it — see Cost above before adding sources. |
+| Apify | $0 by default — off unless you opt into a paid source. Free tier is $5/month of credits if you do; `APIFY_BUDGET_USD` caps spend below that. |
 
 ---
 
