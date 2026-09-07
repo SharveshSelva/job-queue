@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-07T09:51:06.842Z",
+  "updated": "2026-09-07T09:55:43.558Z",
   "location": "Chennai",
   "terms": [
     "React Developer",
@@ -19,7 +19,7 @@
     "wwr",
     "keka"
   ],
-  "count": 284,
+  "count": 285,
   "jobs": [
     {
       "id": "opsl15lgqyn",
@@ -1258,6 +1258,27 @@
       "source": "Himalayas",
       "term": "Frontend Developer",
       "url": "https://himalayas.app/companies/danestreet/jobs/board-certified-colorectal-surgery-disability-peer-physician-reviewer",
+      "first_seen": "2026-09-07"
+    },
+    {
+      "id": "1en4jmp5qr32j",
+      "title": "Full Stack Kotlin/Java-Entwickler:in (m/w/d) - im Kölner Startup",
+      "company": "Greenpocket",
+      "loc": "Cologne",
+      "posted": "2026-09-07",
+      "type": "berufserfahren",
+      "remote": false,
+      "lo": null,
+      "hi": null,
+      "loInr": null,
+      "hiInr": null,
+      "cur": null,
+      "pay": "Not stated",
+      "exp": "—",
+      "applicants": null,
+      "source": "Arbeitnow",
+      "term": "React Developer",
+      "url": "https://www.arbeitnow.com/jobs/companies/greenpocket/full-stack-kotlin-java-entwicklerin-im-kolner-startup-cologne-124198",
       "first_seen": "2026-09-07"
     },
     {
