@@ -41,7 +41,9 @@ async function getJSON(url, opts = {}) {
    at exactly the SaaS companies in COMPANIES. RELEVANT_EXCLUDE (checked
    first, as phrases) keeps those out without narrowing "engineer" itself.
 -------------------------------------------------------------------*/
-const RELEVANT_EXTRA = ["engineer", "fullstack", "sde", "sdet"];
+// "fullstack" alone misses "Full Stack Builder" / "Full-Stack Engineer" —
+// substring matching needs the actual spelling, spaces and hyphens included.
+const RELEVANT_EXTRA = ["engineer", "fullstack", "full stack", "full-stack", "sde", "sdet"];
 const RELEVANT_EXCLUDE = [
   "customer success", "solutions engineer", "solution engineer",
   "sales engineer", "gtm engineer", "value engineer", "support engineer",

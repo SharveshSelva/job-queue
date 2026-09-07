@@ -59,11 +59,17 @@ const SOURCES = {
   ashby:          { label: "Ashby",          free: true, fetch: async () => free.relevant(await free.ashby(free.COMPANIES.ashby), TERMS.join(" ")) },
   smartrecruiters:{ label: "SmartRecruiters",free: true, fetch: async () => free.relevant(await free.smartrecruiters(free.COMPANIES.smartrecruiters), TERMS.join(" ")) },
   remoteok:       { label: "RemoteOK",       free: true, fetch: async () => free.relevant(await free.remoteok(), TERMS.join(" ")) },
-  remotive:       { label: "Remotive",       free: true, fetch: t => free.remotive(t) },
+  // Remotive/Jobicy/Himalayas do send the term to their own search=/tag=
+  // params server-side — but checked live, that filtering is loose enough
+  // to return "Customer Success Manager" and "Presales Engineer" for a
+  // "React Developer" search. Server-side search stays (still the first
+  // pass, cheaper than fetching everything); free.relevant() narrows what
+  // comes back the same way it does for the sources with no search at all.
+  remotive:       { label: "Remotive",       free: true, fetch: async t => free.relevant(await free.remotive(t), t) },
   arbeitnow:      { label: "Arbeitnow",      free: true, fetch: async () => free.relevant(await free.arbeitnow(), TERMS.join(" ")) },
   hn:             { label: "HN Hiring",      free: true, fetch: t => free.hnWhoIsHiring(t) },
-  jobicy:         { label: "Jobicy",         free: true, fetch: t => free.jobicy(t) },
-  himalayas:      { label: "Himalayas",      free: true, fetch: t => free.himalayas(t) },
+  jobicy:         { label: "Jobicy",         free: true, fetch: async t => free.relevant(await free.jobicy(t), t) },
+  himalayas:      { label: "Himalayas",      free: true, fetch: async t => free.relevant(await free.himalayas(t), t) },
   wwr:            { label: "WWR",            free: true, fetch: t => free.weworkremotely(t) },
   workday:        { label: "Workday",        free: true, fetch: async () => free.relevant(await free.workday(), TERMS.join(" ")) },
   // Indian ATS — Keka confirmed working end to end. Freshteam and Zoho
