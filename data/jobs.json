@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-06T06:14:24.104Z",
+  "updated": "2026-09-07T06:22:47.966Z",
   "location": "Chennai",
   "terms": [
     "React Developer",
@@ -10,7 +10,7 @@
     "wellfound",
     "linkedin"
   ],
-  "count": 14,
+  "count": 12,
   "jobs": [
     {
       "id": "1j60mrcahp28g",
@@ -226,42 +226,6 @@
       "source": "Indeed",
       "term": "React Developer",
       "url": "https://in.indeed.com/viewjob",
-      "first_seen": "2026-07-26"
-    },
-    {
-      "id": "25qfusdgwsae",
-      "title": "Front-end Engineer for a funded startup",
-      "company": "Outdoo AI",
-      "loc": "Bengaluru, Karnataka",
-      "posted": "2026-07-24",
-      "type": "—",
-      "remote": false,
-      "lo": 66667,
-      "hi": 83333,
-      "pay": "₹8L–₹10L a year",
-      "exp": "—",
-      "applicants": null,
-      "source": "Wellfound",
-      "term": "Frontend Developer",
-      "url": "https://wellfound.com/jobs/3237209-front-end-engineer-for-a-funded-startup",
-      "first_seen": "2026-07-26"
-    },
-    {
-      "id": "o66q211vhnb3p",
-      "title": "R&D Senior Engineer - React Frontend Engineer- India Development Center",
-      "company": "Hitachi Energy",
-      "loc": "Chennai, Tamil Nadu, India",
-      "posted": "2026-07-24",
-      "type": "—",
-      "remote": false,
-      "lo": null,
-      "hi": null,
-      "pay": "Not stated",
-      "exp": "Senior",
-      "applicants": null,
-      "source": "LinkedIn",
-      "term": "React Developer",
-      "url": "https://www.linkedin.com/jobs/view/r-d-senior-engineer-react-frontend-engineer-india-development-center-at-hitachi-energy-4427920171",
       "first_seen": "2026-07-26"
     }
   ]
