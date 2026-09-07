@@ -31,11 +31,32 @@ async function getJSON(url, opts = {}) {
    queue. Same word-match approach weworkremotely() and hnWhoIsHiring()
    already use below — not exact, but turns "every job at the company"
    into "the ones actually worth swiping on."
+
+   Real engineering roles are often titled "Software Development Engineer",
+   "Fullstack Engineer", "SDE II", "SDET" rather than literally containing
+   "developer" — RELEVANT_EXTRA widens recall for those regardless of what
+   SEARCH_TERMS says. But "engineer" alone also matches whole job families
+   that are pre-sales/support, not software: Solutions Engineer, Customer
+   Success Engineer, GTM Engineer, Value Engineer are real, common titles
+   at exactly the SaaS companies in COMPANIES. RELEVANT_EXCLUDE (checked
+   first, as phrases) keeps those out without narrowing "engineer" itself.
 -------------------------------------------------------------------*/
+const RELEVANT_EXTRA = ["engineer", "fullstack", "sde", "sdet"];
+const RELEVANT_EXCLUDE = [
+  "customer success", "solutions engineer", "solution engineer",
+  "sales engineer", "gtm engineer", "value engineer", "support engineer",
+];
+
 export function relevant(rows, terms) {
-  const needle = String(terms).toLowerCase().split(/\s+/).filter(w => w.length > 3);
-  if (!needle.length) return rows;
-  return rows.filter(r => needle.some(w => String(r.title || "").toLowerCase().includes(w)));
+  const needle = [
+    ...String(terms).toLowerCase().split(/\s+/).filter(w => w.length > 3),
+    ...RELEVANT_EXTRA,
+  ];
+  return rows.filter(r => {
+    const title = String(r.title || "").toLowerCase();
+    if (RELEVANT_EXCLUDE.some(p => title.includes(p))) return false;
+    return needle.some(w => title.includes(w));
+  });
 }
 
 /* ------------------------------------------------------------------
