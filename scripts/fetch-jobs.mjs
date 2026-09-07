@@ -160,38 +160,49 @@ if (WANTED.some(id => SOURCES[id] && !SOURCES[id].free) && !TOKEN) {
   process.exit(1);
 }
 
-/* ---------------- salary: pull ₹ figures out of free text ---------------- */
+/* ---------------- salary: pull figures out of free text ---------------- */
 const MONTH = 1, YEAR = 1 / 12;
-// No live FX feed here — this is a rough, occasionally-stale constant so a
-// "$120,000 a year" listing (RemoteOK/Jobicy/Himalayas all report in USD)
-// doesn't get compared against ₹ figures as if the number were already
-// rupees. Being off by a few percent on the exchange rate is a minor
-// inaccuracy; treating $120,000 as ₹120,000 is off by 88x and quietly
-// filters the highest-paying listings out of the queue.
+// No live FX feed here — this is a rough, occasionally-stale constant used
+// ONLY to make loInr/hiInr comparable for filtering across currencies. It
+// never touches display: lo/hi stay in whatever currency the source
+// actually reported, and the card always shows that. Set 2026-09-07 — if
+// the rupee moves meaningfully, nudge this; a stale rate only skews which
+// side of a ₹ filter chip a USD listing falls on, it can't misrepresent
+// what's shown on the card.
 const USD_INR = 88;
 
 function parsePay(text = "") {
-  if (!text || /^n\/?a$/i.test(String(text).trim())) return { lo: null, hi: null, label: "Not stated" };
+  if (!text || /^n\/?a$/i.test(String(text).trim()))
+    return { lo: null, hi: null, loInr: null, hiInr: null, cur: null, label: "Not stated" };
   const t = String(text).replace(/,/g, "");
 
   // Currency has to be decided before any number is parsed — a bare
   // number means nothing without knowing which currency it's in.
   const isUsd = /\$|USD/i.test(t) && !/₹/.test(t);
+  const cur = isUsd ? "USD" : "INR";
   const fx = isUsd ? USD_INR : 1;
+  // lo/hi stay in native currency (for display); loInr/hiInr are always
+  // rupees (for the ₹ filter chips) — the two must never be the same
+  // field, or a USD figure ends up either unfiltered or misdisplayed.
+  const finish = (a, b) => ({
+    lo: Math.round(a), hi: Math.round(b),
+    loInr: Math.round(a * fx), hiInr: Math.round(b * fx),
+    cur, label: String(text).trim().slice(0, 60),
+  });
 
   // Wellfound style: "₹3L–₹4L a year", "₹8L–₹24L a year"
   const lakh = t.match(/₹\s*(\d+(?:\.\d+)?)\s*L\s*(?:-|–|to)?\s*(?:₹\s*(\d+(?:\.\d+)?)\s*L)?/i);
   if (lakh) {
     const a = Number(lakh[1]) * 1e5 * YEAR;
     const b = lakh[2] ? Number(lakh[2]) * 1e5 * YEAR : a;
-    return { lo: Math.round(a), hi: Math.round(b), label: String(text).trim().slice(0, 60) };
+    return finish(a, b);
   }
 
   const lpa = t.match(/(?:₹|rs\.?\s*)?(\d+(?:\.\d+)?)\s*(?:-|–|to)?\s*(\d+(?:\.\d+)?)?\s*lpa/i);
   if (lpa) {
     const a = Number(lpa[1]) * 1e5 * YEAR;
     const b = lpa[2] ? Number(lpa[2]) * 1e5 * YEAR : a;
-    return { lo: Math.round(a), hi: Math.round(b), label: String(text).trim().slice(0, 60) };
+    return finish(a, b);
   }
   // "$50,000 - $80,000 a year": each number needs its own optional currency
   // prefix. Without "$" as an option here, "$50000 - $80000" fails to match
@@ -201,11 +212,11 @@ function parsePay(text = "") {
   const per = t.match(/(?:₹|\$|rs\.?\s*)?(\d{4,9}(?:\.\d+)?)\s*(?:-|–|to)?\s*(?:₹|\$|rs\.?\s*)?(\d{4,9}(?:\.\d+)?)?\s*(?:per|a|\/)\s*(month|year|annum|yr|mo)/i);
   if (per) {
     const unit = /mo/i.test(per[3]) ? MONTH : YEAR;
-    const a = Number(per[1]) * unit * fx;
-    const b = per[2] ? Number(per[2]) * unit * fx : a;
-    return { lo: Math.round(a), hi: Math.round(b), label: String(text).trim().slice(0, 60) };
+    const a = Number(per[1]) * unit;
+    const b = per[2] ? Number(per[2]) * unit : a;
+    return finish(a, b);
   }
-  return { lo: null, hi: null, label: String(text).trim().slice(0, 60) || "Not stated" };
+  return { lo: null, hi: null, loInr: null, hiInr: null, cur: null, label: String(text).trim().slice(0, 60) || "Not stated" };
 }
 
 const pick = (o, keys) => {
@@ -240,7 +251,7 @@ function normalise(r, term, source) {
   const loc = pick(r, ["job_location", "location", "jobLocation", "formattedLocation", "place"]) || "—";
   const payRaw = pick(r, ["salary", "salaryInfo", "compensation", "salaryRange", "pay"])
                  || pick(r, ["job_description", "description", "descriptionText", "jobDescription"]) || "";
-  const { lo, hi, label } = parsePay(typeof payRaw === "string" ? payRaw : JSON.stringify(payRaw));
+  const { lo, hi, loInr, hiInr, cur, label } = parsePay(typeof payRaw === "string" ? payRaw : JSON.stringify(payRaw));
 
   const postedRaw = pick(r, ["posted_date", "postingDateParsed", "postedAt", "datePosted", "publishedAt", "postedDate", "listedAt", "date"]);
   let posted = new Date().toISOString().slice(0, 10);
@@ -273,7 +284,7 @@ function normalise(r, term, source) {
     posted,
     type: pick(r, ["employment_type", "jobType", "employmentType", "contractType"]) || "—",
     remote: isRemote,
-    lo, hi, pay: label,
+    lo, hi, loInr, hiInr, cur, pay: label,
     exp: pick(r, ["experience_level", "experienceLevel", "seniority", "experience"]) || "—",
     applicants: (() => {
       const a = pick(r, ["num_applicants", "applicants", "applicantCount", "numApplicants", "applicantsCount"]);

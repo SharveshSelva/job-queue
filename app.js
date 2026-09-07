@@ -25,7 +25,15 @@ const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const age = d => Math.floor((Date.now() - new Date(d)) / DAY);
 const ago = d => { const n = age(d); return n <= 0 ? "today" : n === 1 ? "yesterday"
   : n < 30 ? n + "d" : n < 365 ? Math.floor(n / 30) + "mo" : Math.floor(n / 365) + "y"; };
-const inr = n => "₹" + (n >= 1000 ? Math.round(n / 1000) + "k" : n);
+// Compact pay display in whatever currency the listing actually reported —
+// never converted. cur is absent on records fetched before this field
+// existed; those already stored their number in rupees, so falling back to
+// ₹ keeps them displaying exactly as before.
+const payFmt = (n, cur) => (cur === "USD" ? "$" : "₹") + (n >= 1000 ? Math.round(n / 1000) + "k" : n);
+// The number the ₹ filter chips compare against — always rupees. Records
+// with loInr/hiInr (fetched after this field existed) use those; older
+// records only have lo/hi, which for them IS already rupees.
+const payInr = j => (j.cur ? (j.hiInr ?? j.loInr) : (j.hi ?? j.lo)) ?? 0;
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
@@ -73,7 +81,7 @@ const undecided = () => state.jobs
   .filter(j => !state.decisions[j.id])
   .filter(j => state.remote ? j.remote : true)
   .filter(j => state.fresh ? age(j.posted) <= 30 : true)
-  .filter(j => state.minPay ? (j.hi || j.lo || 0) >= state.minPay : true)
+  .filter(j => state.minPay ? payInr(j) >= state.minPay : true)
   .sort((a, b) => new Date(b.posted) - new Date(a.posted));
 
 const withState = s => state.jobs
@@ -242,7 +250,7 @@ function renderList(stage, jobs, decided) {
           <p class="s">${esc(j.company)} · ${esc(j.loc)} · ${ago(j.posted)}${j.remote ? " · Remote" : ""}${j.source ? " · " + esc(j.source) : ""}</p>
         </div>
         ${decided ? '<button class="undo">Undo</button>'
-                  : `<span class="amt ${j.lo ? "known" : ""}">${j.lo ? inr(j.lo) + "–" + inr(j.hi) : "—"}</span>`}
+                  : `<span class="amt ${j.lo ? "known" : ""}">${j.lo ? payFmt(j.lo, j.cur) + "–" + payFmt(j.hi, j.cur) : "—"}</span>`}
       </div>
       ${decided ? "" : `<div class="btns">
         <button class="mini skip">Skip</button>

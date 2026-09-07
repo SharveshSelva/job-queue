@@ -129,11 +129,18 @@ at a company (sales, HR, finance included), and RemoteOK/Arbeitnow/Workday retur
 (same word-match approach as `wwr` and `hn`). It's a title match, not a semantic one — good
 enough to cut noise, not a guarantee of precision.
 
-**Salary currency.** RemoteOK, Jobicy and Himalayas report pay in USD. `parsePay()` in
-`scripts/fetch-jobs.mjs` detects `$`/USD and converts using a hardcoded `USD_INR` constant
-(no live FX feed) rather than treating the number as if it were already rupees — a
-$120,000/year listing showing as ₹13k/month was silently filtered out by every salary chip
-before this. Update `USD_INR` occasionally; it'll drift.
+**Salary currency.** RemoteOK, Jobicy and Himalayas report pay in USD. Every job record
+carries `lo`/`hi` (pay in whatever currency the source actually reported), `cur` (`"USD"` or
+`"INR"`), and `loInr`/`hiInr` (always rupees). **Display uses `lo`/`hi` + `cur` — a $150k/year
+listing shows as `$13k` on the card, never converted to a rupee figure.** Filtering uses
+`loInr`/`hiInr` — the ₹15k/25k/40k chips compare against those, so a USD listing still sorts
+correctly against ₹ ones without the card ever showing a fabricated rupee amount. The
+conversion (`USD_INR` in `scripts/fetch-jobs.mjs`) is a hardcoded constant, no live FX feed —
+**set 2026-09-07**, nudge it occasionally or the ₹ chips drift out of sync with reality. It
+only affects which side of a filter chip a USD listing lands on; it can never leak into what
+a card displays. Records fetched before this field existed have no `cur` — both the filter
+and display fall back to treating `lo`/`hi` as rupees for those, matching how they were always
+stored.
 
 **Date reliability.** Greenhouse and WWR give a real, per-listing posted date. Arbeitnow's
 `created_at` and Himalayas' `pubDate` don't — checked live, both cluster within minutes of

@@ -37,7 +37,10 @@
       "source": "Arbeitnow",
       "term": "React Developer",
       "url": "https://www.arbeitnow.com/jobs/companies/greenpocket/react-developerin-im-kolner-startup-cologne-477894",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "6shc2619t1dvc",
@@ -55,7 +58,10 @@
       "source": "Arbeitnow",
       "term": "React Developer",
       "url": "https://www.arbeitnow.com/jobs/companies/prime-hr-agentur/senior-bi-developer-munich-306496",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "62igheh5jdey",
@@ -73,7 +79,10 @@
       "source": "Arbeitnow",
       "term": "React Developer",
       "url": "https://www.arbeitnow.com/jobs/companies/lanch/senior-business-developer-berlin-37569",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "rp4d3gtc6cyy",
@@ -91,7 +100,10 @@
       "source": "Arbeitnow",
       "term": "React Developer",
       "url": "https://www.arbeitnow.com/jobs/companies/neoshare/senior-frontend-software-engineer-angular-berlin-198663",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "e8zm0r1mkfenj",
@@ -109,7 +121,10 @@
       "source": "Himalayas",
       "term": "React Developer",
       "url": "https://himalayas.app/companies/morgan-advanced-materials/jobs/change-business-partner-mrp-7961538248",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "108vq98rcaiw4",
@@ -119,15 +134,18 @@
       "posted": "2026-09-07",
       "type": "—",
       "remote": true,
-      "lo": 586667,
-      "hi": 953333,
+      "lo": 6667,
+      "hi": 10833,
       "pay": "$80000 - $130000 a year",
       "exp": "—",
       "applicants": null,
       "source": "Himalayas",
       "term": "React Developer",
       "url": "https://himalayas.app/companies/new-york-life-insurance-co/jobs/senior-associate-underwriter-remote-any-state-us",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": 586667,
+      "hiInr": 953333,
+      "cur": "USD"
     },
     {
       "id": "1yh2ace1azgdcy",
@@ -145,7 +163,10 @@
       "source": "Himalayas",
       "term": "React Developer",
       "url": "https://himalayas.app/companies/nasco/jobs/principal-technology-architect",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "116hyl0vb083k",
@@ -155,15 +176,18 @@
       "posted": "2026-09-07",
       "type": "—",
       "remote": true,
-      "lo": 447553,
-      "hi": 526533,
+      "lo": 5086,
+      "hi": 5983,
       "pay": "$61030 - $71800 a year",
       "exp": "—",
       "applicants": null,
       "source": "Himalayas",
       "term": "React Developer",
       "url": "https://himalayas.app/companies/u-s-bank/jobs/north-american-junior-authorization-line-specialist",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": 447553,
+      "hiInr": 526533,
+      "cur": "USD"
     },
     {
       "id": "1s7yldvhgwtst",
@@ -181,7 +205,10 @@
       "source": "Himalayas",
       "term": "React Developer",
       "url": "https://himalayas.app/companies/mercor/jobs/gtm-specialist-fully-remote-upto-160-hr-8344032168",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1ky5m0jqqj521",
@@ -199,7 +226,10 @@
       "source": "Himalayas",
       "term": "React Developer",
       "url": "https://himalayas.app/companies/lifelancer/jobs/quality-assurance-manager-9517881345",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1g0973a1hh9rby",
@@ -209,15 +239,18 @@
       "posted": "2026-09-07",
       "type": "—",
       "remote": true,
-      "lo": 887333,
-      "hi": 1259280,
+      "lo": 10083,
+      "hi": 14310,
       "pay": "$121000 - $171720 a year",
       "exp": "—",
       "applicants": null,
       "source": "Himalayas",
       "term": "React Developer",
       "url": "https://himalayas.app/companies/devoted-health/jobs/transitions-of-care-advanced-practice-provider-9045064522",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": 887333,
+      "hiInr": 1259280,
+      "cur": "USD"
     },
     {
       "id": "1plpdffa7zniv",
@@ -227,15 +260,18 @@
       "posted": "2026-09-07",
       "type": "—",
       "remote": true,
-      "lo": 1036200,
-      "hi": 1636800,
+      "lo": 11775,
+      "hi": 18600,
       "pay": "$141300 - $223200 a year",
       "exp": "—",
       "applicants": null,
       "source": "Himalayas",
       "term": "React Developer",
       "url": "https://himalayas.app/companies/ensemble-health-partners/jobs/director-it-security-1810446938",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": 1036200,
+      "hiInr": 1636800,
+      "cur": "USD"
     },
     {
       "id": "1xumo2n19f3p0t",
@@ -253,7 +289,10 @@
       "source": "Himalayas",
       "term": "React Developer",
       "url": "https://himalayas.app/companies/mindrift/jobs/freelance-presentation-designer-8236339970",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "cfdqp1encat1",
@@ -271,7 +310,10 @@
       "source": "Himalayas",
       "term": "React Developer",
       "url": "https://himalayas.app/companies/mercor/jobs/ai-safety-specialist-evaluation-expert-5987899155",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "19l26z2kloule",
@@ -289,7 +331,10 @@
       "source": "Himalayas",
       "term": "React Developer",
       "url": "https://himalayas.app/companies/cloud-software-group/jobs/principal-strategic-partner-manager",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1ltpv431ub9xjz",
@@ -307,7 +352,10 @@
       "source": "Himalayas",
       "term": "React Developer",
       "url": "https://himalayas.app/companies/hone-health/jobs/chief-longevity-officer-774182331",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "xfku6rxpkbyt",
@@ -325,7 +373,10 @@
       "source": "Himalayas",
       "term": "React Developer",
       "url": "https://himalayas.app/companies/td-synnex/jobs/business-development-representative-iii-components-micron",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1o1ykj8fh5vha",
@@ -335,15 +386,18 @@
       "posted": "2026-09-07",
       "type": "—",
       "remote": true,
-      "lo": 1100000,
-      "hi": 1246667,
+      "lo": 12500,
+      "hi": 14167,
       "pay": "$150000 - $170000 a year",
       "exp": "—",
       "applicants": null,
       "source": "Himalayas",
       "term": "React Developer",
       "url": "https://himalayas.app/companies/fenix24/jobs/principal-customer-success-manager",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": 1100000,
+      "hiInr": 1246667,
+      "cur": "USD"
     },
     {
       "id": "1l33lau9no6qy",
@@ -361,7 +415,10 @@
       "source": "Himalayas",
       "term": "React Developer",
       "url": "https://himalayas.app/companies/fidelity-investments/jobs/trading-specialist-greater-phoenix-az-area",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "31tdwqqdwd0q",
@@ -371,15 +428,18 @@
       "posted": "2026-09-07",
       "type": "—",
       "remote": true,
-      "lo": 1022670,
-      "hi": 1383624,
+      "lo": 11621,
+      "hi": 15723,
       "pay": "$139455 - $188676 a year",
       "exp": "—",
       "applicants": null,
       "source": "Himalayas",
       "term": "React Developer",
       "url": "https://himalayas.app/companies/thrivent-financial-for-lutherans/jobs/engineering-manager-data-enablement",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": 1022670,
+      "hiInr": 1383624,
+      "cur": "USD"
     },
     {
       "id": "1ggjpdak5q9z0",
@@ -389,15 +449,18 @@
       "posted": "2026-09-07",
       "type": "—",
       "remote": true,
-      "lo": 880000,
-      "hi": 1393333,
+      "lo": 10000,
+      "hi": 15833,
       "pay": "$120000 - $190000 a year",
       "exp": "—",
       "applicants": null,
       "source": "Himalayas",
       "term": "React Developer",
       "url": "https://himalayas.app/companies/orion-placement/jobs/patent-attorney-chemical",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": 880000,
+      "hiInr": 1393333,
+      "cur": "USD"
     },
     {
       "id": "dneiq91fw02dx",
@@ -407,15 +470,18 @@
       "posted": "2026-09-07",
       "type": "—",
       "remote": true,
-      "lo": 368500,
-      "hi": 838933,
+      "lo": 4188,
+      "hi": 9533,
       "pay": "$50250 - $114400 a year",
       "exp": "—",
       "applicants": null,
       "source": "Himalayas",
       "term": "React Developer",
       "url": "https://himalayas.app/companies/nvidia/jobs/infiniband-network-engineer",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": 368500,
+      "hiInr": 838933,
+      "cur": "USD"
     },
     {
       "id": "ddir5xuiqwx",
@@ -433,7 +499,10 @@
       "source": "Himalayas",
       "term": "React Developer",
       "url": "https://himalayas.app/companies/intapp/jobs/senior-brand-intelligence-manager",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "150m15x14zwusx",
@@ -443,15 +512,18 @@
       "posted": "2026-09-07",
       "type": "—",
       "remote": true,
-      "lo": 638000,
-      "hi": 1268667,
+      "lo": 7250,
+      "hi": 14417,
       "pay": "$87000 - $173000 a year",
       "exp": "—",
       "applicants": null,
       "source": "Himalayas",
       "term": "React Developer",
       "url": "https://himalayas.app/companies/lifelancer/jobs/organizational-learning-advisor-enterprise-systems-argentina",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": 638000,
+      "hiInr": 1268667,
+      "cur": "USD"
     },
     {
       "id": "1lp6vimkc6oqw",
@@ -469,7 +541,10 @@
       "source": "Arbeitnow",
       "term": "React Developer",
       "url": "https://www.arbeitnow.com/jobs/companies/trusteq-gmbh/ai-senior-developer-munchen-276811",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "19k06q6v73nsq",
@@ -487,7 +562,10 @@
       "source": "Arbeitnow",
       "term": "React Developer",
       "url": "https://www.arbeitnow.co.uk/jobs/companies/perk/senior-frontend-engineer-london-423081",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "kge7w31kr6bml",
@@ -505,7 +583,10 @@
       "source": "Arbeitnow",
       "term": "React Developer",
       "url": "https://www.arbeitnow.fr/jobs/companies/parity/remote-core-developer-platform-60113",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1i1htdw1am0fos",
@@ -523,7 +604,10 @@
       "source": "Arbeitnow",
       "term": "React Developer",
       "url": "https://www.arbeitnow.fr/jobs/companies/parity/remote-core-developer-node-28104",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1vva64619lg97w",
@@ -541,7 +625,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/145140-staff-software-developer",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "m1cgf3utjlnr",
@@ -559,7 +646,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/145204-customer-solution-architect-team-lead-amer",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1lk5x6n1rh9all",
@@ -577,7 +667,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/148317-senior-customer-engineer",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1bx4b543kxclm",
@@ -595,7 +688,10 @@
       "source": "Remotive",
       "term": "React Developer",
       "url": "https://remotive.com/remote-jobs/sales/sales-jedi-2091088",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "h6f0s11mnr5cr",
@@ -613,7 +709,10 @@
       "source": "Remotive",
       "term": "React Developer",
       "url": "https://remotive.com/remote-jobs/customer-service/saas-product-support-jedi-2091087",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "usszu9uatayl",
@@ -631,7 +730,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/152602-revtech-senior-salesforce-developer-latam",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "2wla0i1cd7r4g",
@@ -649,7 +751,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/152566-support-engineer",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "z5h6wqj6i1u2",
@@ -667,7 +772,10 @@
       "source": "Remotive",
       "term": "React Developer",
       "url": "https://remotive.com/remote-jobs/writing/freelance-writer-1185979",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "y2qpc41tv98eq",
@@ -685,7 +793,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/152550-staff-software-engineer-ui-foundations-team",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "5m4to9k72daf",
@@ -703,7 +814,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/152547-senior-full-stack-engineer",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "16rsg2cvv5m3m",
@@ -721,7 +835,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/152539-senior-software-engineer-frontend",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1x9y3cb1bh541f",
@@ -739,7 +856,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/152458-aem-developer",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "12gzo9511c3l39",
@@ -757,7 +877,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/152416-senior-software-engineer-developer-experience",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "hujojc3f3kdi",
@@ -775,7 +898,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/152452-product-engineer-internal-tools-latam",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "pk4sgfg92e8p",
@@ -793,7 +919,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/150101-senior-customer-support-engineer",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "25763jez03vd",
@@ -811,7 +940,10 @@
       "source": "Jobicy",
       "term": "Frontend Developer",
       "url": "https://jobicy.com/jobs/152401-qa-tester-future-roles",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1ccfant1492135",
@@ -829,7 +961,10 @@
       "source": "Remotive",
       "term": "React Developer",
       "url": "https://remotive.com/remote-jobs/writing/freelance-copywriter-1749306",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "8y3httocektv",
@@ -847,7 +982,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/152396-engineering-manager-growth",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "pzus241bmzku0",
@@ -865,7 +1003,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/149943-enterprise-customer-success-manager-japanese-speaker",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1n9kh4af4c1p8",
@@ -883,7 +1024,10 @@
       "source": "Jobicy",
       "term": "Frontend Developer",
       "url": "https://jobicy.com/jobs/150061-senior-backend-engineer-ai-engineering-chat",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "bizuel1na4c9p",
@@ -901,7 +1045,10 @@
       "source": "Keka",
       "term": "React Developer",
       "url": "https://ihl.keka.com/careers/jobdetails/140667",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1ravhm31dxrk1p",
@@ -919,7 +1066,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/152352-full-stack-software-engineer-internal-services",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "78djgrivwbf7",
@@ -937,7 +1087,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/152293-senior-security-engineer-3",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "suvsmy1q06ua6",
@@ -955,7 +1108,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/152273-appsec-engineer",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "149hqyogbgopu",
@@ -973,7 +1129,10 @@
       "source": "Jobicy",
       "term": "Frontend Developer",
       "url": "https://jobicy.com/jobs/152333-qa-analyst-future-roles",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "18l6byqrouj4m",
@@ -991,7 +1150,10 @@
       "source": "HN",
       "term": "React Developer",
       "url": "https://quill.co/",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "15evrdva0lbmp",
@@ -1009,7 +1171,10 @@
       "source": "HN",
       "term": "React Developer",
       "url": "https://openeducation.foundation",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "bjw433lzjl5f",
@@ -1027,7 +1192,10 @@
       "source": "HN",
       "term": "React Developer",
       "url": "https://snout.com/",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1h7vc8r189xzj1",
@@ -1045,7 +1213,10 @@
       "source": "HN",
       "term": "React Developer",
       "url": "https://yeet.cx/",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "cjfyy8a136pu",
@@ -1063,7 +1234,10 @@
       "source": "HN",
       "term": "React Developer",
       "url": "https://www.oysterhr.com/careers",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "h8k0k51jdi9dl",
@@ -1081,7 +1255,10 @@
       "source": "HN",
       "term": "React Developer",
       "url": "https://nlnet.nl/foundation/jobs/developer-rust.html",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "q8x92s1hslnik",
@@ -1099,7 +1276,10 @@
       "source": "HN",
       "term": "React Developer",
       "url": "https://shepherdinsurance.com/careers",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "126ku0p1m7nda5",
@@ -1117,7 +1297,10 @@
       "source": "HN",
       "term": "React Developer",
       "url": "https://www.motan-group.com/en/news/career/jobs/detail/softw...",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "8brw31892o6r",
@@ -1135,7 +1318,10 @@
       "source": "HN",
       "term": "React Developer",
       "url": "https://sudowrite.com",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1blnwgcn5zlhy",
@@ -1153,7 +1339,10 @@
       "source": "HN",
       "term": "React Developer",
       "url": "https://monumint.com",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "6hv4j2blstb",
@@ -1171,7 +1360,10 @@
       "source": "HN",
       "term": "React Developer",
       "url": "https://github.com/openzfs/zfs/pull/17567",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "140dapu1909op2",
@@ -1189,7 +1381,10 @@
       "source": "HN",
       "term": "React Developer",
       "url": "https://jobs.ashbyhq.com/stream",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1btrkqwpjvr3w",
@@ -1207,7 +1402,10 @@
       "source": "HN",
       "term": "React Developer",
       "url": "https://ats.vistulo.com/roles/253cbd69-1019-4547-93b6-6ef8db...",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "10i8a6hschps",
@@ -1225,7 +1423,10 @@
       "source": "HN",
       "term": "React Developer",
       "url": "https://starbridge.ai/",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "16mc2jgls1vww",
@@ -1243,7 +1444,10 @@
       "source": "HN",
       "term": "React Developer",
       "url": "https://grnh.se/k4xos2c24us",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "ioi8yysgeyt6",
@@ -1261,7 +1465,10 @@
       "source": "HN",
       "term": "React Developer",
       "url": "https://workhero.pro",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "gvbsh4s8gdt0",
@@ -1279,7 +1486,10 @@
       "source": "HN",
       "term": "React Developer",
       "url": "https://jobs.lever.co/findigs/1ea92751-1c85-4eb6-84b4-86c529...",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "wbi5l2ozkxt",
@@ -1297,7 +1507,10 @@
       "source": "HN",
       "term": "React Developer",
       "url": "https://e123insurtech.com",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "9nlhsx18wooqz",
@@ -1315,7 +1528,10 @@
       "source": "HN",
       "term": "React Developer",
       "url": "https://greywatch.co/careers/co-founder-ceo",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "88wb0n1tfobvl",
@@ -1333,7 +1549,10 @@
       "source": "HN",
       "term": "React Developer",
       "url": "https://www.govstar.us",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "i1o7c6133ttus",
@@ -1351,7 +1570,10 @@
       "source": "HN",
       "term": "React Developer",
       "url": "https://runway.com/",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1pqyvnqdhbweo",
@@ -1369,7 +1591,10 @@
       "source": "HN",
       "term": "React Developer",
       "url": "https://relevant.healthcare/jobs/",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "wq4bi1u817ye",
@@ -1387,7 +1612,10 @@
       "source": "HN",
       "term": "React Developer",
       "url": "https://oklo.com",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1hiyrmoioov40",
@@ -1405,7 +1633,10 @@
       "source": "HN",
       "term": "React Developer",
       "url": "https://sunspell.fm/careers/founding-engineer",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1hg2a7p2w1uq3",
@@ -1423,7 +1654,10 @@
       "source": "HN",
       "term": "React Developer",
       "url": "https://www.furtimmodus.com/software-engineer",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1k4qdsf1os7kcv",
@@ -1441,7 +1675,10 @@
       "source": "HN",
       "term": "Frontend Developer",
       "url": "https://www.solutionstreet.com/",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1fjvoeb1o30q4r",
@@ -1459,7 +1696,10 @@
       "source": "HN",
       "term": "Frontend Developer",
       "url": "https://www.ashbyhq.com/blog/engineering/ai-ashby-engineerin...",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "7wjbba1dl6g26",
@@ -1477,7 +1717,10 @@
       "source": "HN",
       "term": "Frontend Developer",
       "url": "https://sourcegraph.com",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "17mi2pwrfbjoe",
@@ -1495,7 +1738,10 @@
       "source": "HN",
       "term": "Frontend Developer",
       "url": "https://careers.spacelift.io/jobs/3006934-software-engineer-...",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "nyjget1y11x4d",
@@ -1513,7 +1759,10 @@
       "source": "HN",
       "term": "Frontend Developer",
       "url": "https://loftorbital.com",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "6potixppk28r",
@@ -1531,7 +1780,10 @@
       "source": "HN",
       "term": "Frontend Developer",
       "url": "https://goareo.com/",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "bsvb8n1nlqfqf",
@@ -1549,7 +1801,10 @@
       "source": "HN",
       "term": "Frontend Developer",
       "url": "https://www.psi.ch/en/hr/job-opportunities/75028-software-sc...",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "noqt9rjxbun5",
@@ -1567,7 +1822,10 @@
       "source": "HN",
       "term": "Frontend Developer",
       "url": "https://chainsecurity.com/",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1mrx59h1gcu0ov",
@@ -1585,7 +1843,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/152199-senior-presales-engineer",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "jjys2b13jqodt",
@@ -1603,7 +1864,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/152181-staff-software-engineer-ai",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1f22itu11zgfrw",
@@ -1621,7 +1885,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/152130-senior-manager-solutions-architect-2",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "8jlx2v1mafw45",
@@ -1639,7 +1906,10 @@
       "source": "Jobicy",
       "term": "Frontend Developer",
       "url": "https://jobicy.com/jobs/149869-frontend-engineering-team-lead-martech",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1qu5pj81d343p4",
@@ -1657,7 +1927,10 @@
       "source": "Jobicy",
       "term": "Frontend Developer",
       "url": "https://jobicy.com/jobs/152252-senior-security-engineer-ai-security",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1w2yo56uja06o",
@@ -1675,7 +1948,10 @@
       "source": "Jobicy",
       "term": "Frontend Developer",
       "url": "https://jobicy.com/jobs/152244-forward-deployed-engineer",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1fbpjbi1883cck",
@@ -1693,7 +1969,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/152105-federal-customer-success-manager-devops",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1iw6tmghp0rms",
@@ -1711,7 +1990,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/142184-software-engineer-multiple-levels",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "19o8womlvaq62",
@@ -1729,7 +2011,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/152035-senior-front-end-developer-react-typescript-market-research",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "jfmndp2tl9qp",
@@ -1747,7 +2032,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/152060-developer-relations-engineer-2",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1p3wtjq1uxpx1e",
@@ -1765,7 +2053,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/152053-support-engineer-emea",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "6uq7rh1it9i91",
@@ -1783,7 +2074,10 @@
       "source": "Jobicy",
       "term": "Frontend Developer",
       "url": "https://jobicy.com/jobs/152011-backend-developer-net-azure",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "177i5lo1wkkpdg",
@@ -1801,7 +2095,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/151950-qa-engineer-4",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "owtplh1jwbk8j",
@@ -1819,7 +2116,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/151929-staff-design-engineer-uk",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "h9ucuhcjcwf3",
@@ -1837,7 +2137,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/151927-staff-design-engineer-eu",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "asqklc1lasj8c",
@@ -1855,7 +2158,10 @@
       "source": "Remotive",
       "term": "React Developer",
       "url": "https://remotive.com/remote-jobs/software-development/senior-react-full-stack-developer-2091101",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "57h9jd14hhuhz",
@@ -1873,7 +2179,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/150845-full-stack-developer-java-react-f-m-d",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1vc149b14sgbjb",
@@ -1891,7 +2200,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/151861-staff-platform-engineer-eu",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "tzrq66fw4viy",
@@ -1909,7 +2221,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/151860-senior-software-engineer-product-engineering-uk",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "c34seq193m3t6",
@@ -1927,7 +2242,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/151859-staff-software-engineer-product-engineering-uk",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "177inggeuoejs",
@@ -1945,7 +2263,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/151856-staff-software-engineer-product-engineering-eu-2",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1ur228tqti4ob",
@@ -1963,7 +2284,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/151853-senior-software-engineer-product-engineering-eu-2",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "16woc60ejly7c",
@@ -1981,7 +2305,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/151816-full-stack-software-engineer",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1bmgy5vflrgu7",
@@ -1999,7 +2326,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/149309-senior-security-engineer-security-incident-response-team-sirt-emea",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "zisg68rryjju",
@@ -2017,7 +2347,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/142468-senior-software-engineer-product-engineering-eu",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "i3xgfzbimoun",
@@ -2035,7 +2368,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/142467-staff-software-engineer-product-engineering-eu",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1ixuosjntt3zt",
@@ -2053,7 +2389,10 @@
       "source": "Remotive",
       "term": "React Developer",
       "url": "https://remotive.com/remote-jobs/qa/senior-qa-engineer-2091100",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1e1f0q61o9lwlk",
@@ -2071,7 +2410,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/151779-staff-backend-engineer-2",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1fftmtw1l2ylbi",
@@ -2089,7 +2431,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/151773-demo-engineer-2",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1rw83rzu57qjh",
@@ -2107,7 +2452,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/151757-senior-design-engineer-metamask",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1a8uilk1vy68q0",
@@ -2125,7 +2473,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/151703-senior-software-engineer-canvas-core",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1urmwnpc0iaz3",
@@ -2143,7 +2494,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/147496-senior-frontend-software-engineer-home-experience",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "teiya1b4vjvh",
@@ -2161,7 +2515,10 @@
       "source": "Jobicy",
       "term": "Frontend Developer",
       "url": "https://jobicy.com/jobs/151756-engineering-manager-notifications",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1j60mrcahp28g",
@@ -2179,7 +2536,10 @@
       "source": "Wellfound",
       "term": "React Developer",
       "url": "https://wellfound.com/jobs/4522745-frontend-sde-intern-founding-team-ui-ux-developer",
-      "first_seen": "2026-08-26"
+      "first_seen": "2026-08-26",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "16j38kmbc368k",
@@ -2197,7 +2557,10 @@
       "source": "Wellfound",
       "term": "React Developer",
       "url": "https://wellfound.com/jobs/4629851-senior-typescript-js-react-engineer-full-stack",
-      "first_seen": "2026-08-26"
+      "first_seen": "2026-08-26",
+      "loInr": 333333,
+      "hiInr": 375000,
+      "cur": "INR"
     },
     {
       "id": "1qmhgiy1bcod7o",
@@ -2215,7 +2578,10 @@
       "source": "Remotive",
       "term": "React Developer",
       "url": "https://remotive.com/remote-jobs/devops/senior-devops-engineer-2091099",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "yfom3s13f2p5e",
@@ -2233,7 +2599,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/151644-staff-design-engineer-americas",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "wzj7g16gy1vd",
@@ -2251,7 +2620,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/151620-engineering-manager-uk",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1v275bv1qxlk1p",
@@ -2269,7 +2641,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/151601-software-engineer-all-levels",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "14gdbeseczfws",
@@ -2287,7 +2662,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/149688-head-of-communications",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "5lkpkfe4er87",
@@ -2305,7 +2683,10 @@
       "source": "Jobicy",
       "term": "Frontend Developer",
       "url": "https://jobicy.com/jobs/147498-design-technologist",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "jkipc71s72f2j",
@@ -2323,7 +2704,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/151482-sei-instructor-lead",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "vkortw95vn0k",
@@ -2341,7 +2725,10 @@
       "source": "Jobicy",
       "term": "Frontend Developer",
       "url": "https://jobicy.com/jobs/151502-front-end-engineering-manager-firefox-desktop",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "11p7ro61kui802",
@@ -2359,7 +2746,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/151420-staff-frontend-engineer-design-systems",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1jg3hfevlpps",
@@ -2377,7 +2767,10 @@
       "source": "Wellfound",
       "term": "Frontend Developer",
       "url": "https://wellfound.com/jobs/2976059-senior-web-developer",
-      "first_seen": "2026-08-27"
+      "first_seen": "2026-08-27",
+      "loInr": 100000,
+      "hiInr": 208333,
+      "cur": "INR"
     },
     {
       "id": "1vgbsk8um2gcy",
@@ -2395,7 +2788,10 @@
       "source": "Jobicy",
       "term": "React Developer",
       "url": "https://jobicy.com/jobs/149527-web-frontend-engineer-js-css-react-flutter",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "185im4vm5ngzx",
@@ -2413,7 +2809,10 @@
       "source": "Jobicy",
       "term": "Frontend Developer",
       "url": "https://jobicy.com/jobs/151398-vp-platform-engineering",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "wnp4wj17cp14l",
@@ -2431,7 +2830,10 @@
       "source": "Remotive",
       "term": "React Developer",
       "url": "https://remotive.com/remote-jobs/all-others/content-reviewer-english-us-2091105",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1hbt47ln208j",
@@ -2449,7 +2851,10 @@
       "source": "Jobicy",
       "term": "Frontend Developer",
       "url": "https://jobicy.com/jobs/151313-senior-frontend-engineer-growth-usa-only-100-remote",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1c0eig0amsqc4",
@@ -2467,7 +2872,10 @@
       "source": "Jobicy",
       "term": "Frontend Developer",
       "url": "https://jobicy.com/jobs/151290-senior-software-engineer-3",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "3msg9x4j48c1",
@@ -2485,7 +2893,10 @@
       "source": "Remotive",
       "term": "React Developer",
       "url": "https://remotive.com/remote-jobs/software-development/senior-golang-developer-2091098",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1mkpbc71pv50cf",
@@ -2503,7 +2914,10 @@
       "source": "Remotive",
       "term": "React Developer",
       "url": "https://remotive.com/remote-jobs/software-development/senior-data-engineer-2091097",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "105v78bo8rm1l",
@@ -2521,7 +2935,10 @@
       "source": "WWR",
       "term": "React Developer",
       "url": "https://weworkremotely.com/remote-jobs/charisma-tec-junior-devops-engineer-ci-cd-developer-tooling-remote-m-f-d",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "tmz8z4hemwvu",
@@ -2539,7 +2956,10 @@
       "source": "Greenhouse",
       "term": "React Developer",
       "url": "https://job-boards.greenhouse.io/postman/jobs/7651740003",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "glbmrt135ongj",
@@ -2557,7 +2977,10 @@
       "source": "Greenhouse",
       "term": "React Developer",
       "url": "https://job-boards.greenhouse.io/postman/jobs/7790859003",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "3kekkr1h4zah5",
@@ -2575,7 +2998,10 @@
       "source": "Jobicy",
       "term": "Frontend Developer",
       "url": "https://jobicy.com/jobs/150929-site-engineer",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "70qa2a1fmeohu",
@@ -2593,7 +3019,10 @@
       "source": "Remotive",
       "term": "React Developer",
       "url": "https://remotive.com/remote-jobs/software-development/senior-independent-ai-engineer-architect-1919266",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1gbie0l1208ph5",
@@ -2611,7 +3040,10 @@
       "source": "Remotive",
       "term": "React Developer",
       "url": "https://remotive.com/remote-jobs/software-development/senior-independent-software-developer-1919265",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "2vq6jyjpp72e",
@@ -2629,7 +3061,10 @@
       "source": "Remotive",
       "term": "React Developer",
       "url": "https://remotive.com/remote-jobs/marketing/head-of-marketing-communications-2091068",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1svtcq2194lq68",
@@ -2647,7 +3082,10 @@
       "source": "Jobicy",
       "term": "Frontend Developer",
       "url": "https://jobicy.com/jobs/150758-design-engineer-brand",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1rhnidh1mklitp",
@@ -2665,7 +3103,10 @@
       "source": "Jobicy",
       "term": "Frontend Developer",
       "url": "https://jobicy.com/jobs/150687-engineering-manager-eu",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "lp63xhxb9xhp",
@@ -2683,7 +3124,10 @@
       "source": "Jobicy",
       "term": "Frontend Developer",
       "url": "https://jobicy.com/jobs/146230-support-engineering-manager-apac",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1duvt8p1v4cj87",
@@ -2701,7 +3145,10 @@
       "source": "Jobicy",
       "term": "Frontend Developer",
       "url": "https://jobicy.com/jobs/149306-support-engineering-manager-apac-2",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1rjhu621lrxf16",
@@ -2719,7 +3166,10 @@
       "source": "Wellfound",
       "term": "Frontend Developer",
       "url": "https://wellfound.com/jobs/4589349-associate-developer-php-full-stack-remote",
-      "first_seen": "2026-08-26"
+      "first_seen": "2026-08-26",
+      "loInr": 22000,
+      "hiInr": 25000,
+      "cur": "INR"
     },
     {
       "id": "19qz70uu7502m",
@@ -2737,7 +3187,10 @@
       "source": "Remotive",
       "term": "React Developer",
       "url": "https://remotive.com/remote-jobs/software-development/tech-lead-full-stack-rails-engineer-2069746",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "18wy9ku23u5qc",
@@ -2755,7 +3208,10 @@
       "source": "WWR",
       "term": "React Developer",
       "url": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-fullstack-developer-react-js-node-js-3",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "hyd2om180ngfs",
@@ -2773,7 +3229,10 @@
       "source": "WWR",
       "term": "React Developer",
       "url": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-ruby-on-rails-developer-ai-augmented-engineering",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1two5bv6b4j4f",
@@ -2791,7 +3250,10 @@
       "source": "WWR",
       "term": "React Developer",
       "url": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-backend-developer-python-9",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "tdcti1ccwc46",
@@ -2809,7 +3271,10 @@
       "source": "Remotive",
       "term": "React Developer",
       "url": "https://remotive.com/remote-jobs/all-others/face-deduplication-collection-2091093",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "166wywf1upqwuv",
@@ -2827,7 +3292,10 @@
       "source": "Wellfound",
       "term": "Frontend Developer",
       "url": "https://wellfound.com/jobs/4573047-sde-3-frontend",
-      "first_seen": "2026-08-26"
+      "first_seen": "2026-08-26",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "14hdr2a1uzspt0",
@@ -2845,7 +3313,10 @@
       "source": "Remotive",
       "term": "React Developer",
       "url": "https://remotive.com/remote-jobs/marketing/remote-office-assistant-1680495",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "193hay521x21z",
@@ -2863,7 +3334,10 @@
       "source": "Wellfound",
       "term": "React Developer",
       "url": "https://wellfound.com/jobs/4572840-full-stack-developer",
-      "first_seen": "2026-08-26"
+      "first_seen": "2026-08-26",
+      "loInr": 75000,
+      "hiInr": 91667,
+      "cur": "INR"
     },
     {
       "id": "1fk0ew9jjvvnx",
@@ -2881,7 +3355,10 @@
       "source": "Remotive",
       "term": "React Developer",
       "url": "https://remotive.com/remote-jobs/sales/inside-sales-contractor-2086540",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "13kk5z31djaixt",
@@ -2899,7 +3376,10 @@
       "source": "Remotive",
       "term": "React Developer",
       "url": "https://remotive.com/remote-jobs/information-technology/tier-iii-service-desk-engineer-2091045",
-      "first_seen": "2026-09-07"
+      "first_seen": "2026-09-07",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "z6nbb4khbuey",
@@ -2917,7 +3397,10 @@
       "source": "Wellfound",
       "term": "React Developer",
       "url": "https://wellfound.com/jobs/4218469-mobile-application-developer-intern-flutter-react-native",
-      "first_seen": "2026-08-26"
+      "first_seen": "2026-08-26",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "eimxdlly6k1",
@@ -2935,7 +3418,10 @@
       "source": "Wellfound",
       "term": "Frontend Developer",
       "url": "https://wellfound.com/jobs/3373193-internship-full-stack-engineer-next-js-website-front-end-backend",
-      "first_seen": "2026-08-26"
+      "first_seen": "2026-08-26",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "1fe4xlvik0i6v",
@@ -2953,7 +3439,10 @@
       "source": "Wellfound",
       "term": "React Developer",
       "url": "https://wellfound.com/jobs/3233038-senior-frontend-developer-sde-3-mandatory-next-js-full-time-on-site",
-      "first_seen": "2026-08-26"
+      "first_seen": "2026-08-26",
+      "loInr": 100000,
+      "hiInr": 208333,
+      "cur": "INR"
     },
     {
       "id": "uz4wjx10o47kb",
@@ -2971,7 +3460,10 @@
       "source": "Wellfound",
       "term": "React Developer",
       "url": "https://wellfound.com/jobs/4523136-react-native-architect",
-      "first_seen": "2026-08-27"
+      "first_seen": "2026-08-27",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     },
     {
       "id": "11t28v2m3s9qa",
@@ -2989,7 +3481,10 @@
       "source": "Wellfound",
       "term": "React Developer",
       "url": "https://wellfound.com/jobs/3727476-full-stack-developer-mern-freelance-part-time",
-      "first_seen": "2026-08-26"
+      "first_seen": "2026-08-26",
+      "loInr": 15000,
+      "hiInr": 20000,
+      "cur": "INR"
     },
     {
       "id": "4c84hg1itfwdu",
@@ -3007,7 +3502,10 @@
       "source": "Indeed",
       "term": "React Developer",
       "url": "https://in.indeed.com/viewjob",
-      "first_seen": "2026-07-26"
+      "first_seen": "2026-07-26",
+      "loInr": null,
+      "hiInr": null,
+      "cur": null
     }
   ]
 }
