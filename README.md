@@ -122,6 +122,27 @@ Apify sources are opt-in.
 | `workday` | company tenants — needs `WORKDAY_TENANTS`, empty by default | free |
 | `keka` | Indian ATS, company boards | free |
 
+**Relevance filtering.** Greenhouse/Lever/Ashby/SmartRecruiters/Keka return *every* opening
+at a company (sales, HR, finance included), and RemoteOK/Arbeitnow/Workday return their
+*entire* board — none of them support a server-side search. `free.relevant()` in
+`scripts/free-sources.mjs` filters all of these down to titles matching `SEARCH_TERMS`
+(same word-match approach as `wwr` and `hn`). It's a title match, not a semantic one — good
+enough to cut noise, not a guarantee of precision.
+
+**Salary currency.** RemoteOK, Jobicy and Himalayas report pay in USD. `parsePay()` in
+`scripts/fetch-jobs.mjs` detects `$`/USD and converts using a hardcoded `USD_INR` constant
+(no live FX feed) rather than treating the number as if it were already rupees — a
+$120,000/year listing showing as ₹13k/month was silently filtered out by every salary chip
+before this. Update `USD_INR` occasionally; it'll drift.
+
+**Date reliability.** Greenhouse and WWR give a real, per-listing posted date. Arbeitnow's
+`created_at` and Himalayas' `pubDate` don't — checked live, both cluster within minutes of
+whenever you call the API regardless of the actual listing, which reads as "last touched by
+their pipeline" rather than "posted by the employer." A listing's date is set once, the
+first time this app sees its URL (see the `seen` dedupe in `fetch-jobs.mjs`), so this mostly
+just means an old Arbeitnow/Himalayas listing this app happens to see for the first time
+today gets stamped as posted today — worth knowing if a card's freshness looks suspicious.
+
 **Freshteam and Zoho Recruit were investigated and dropped** — both only expose job data
 through an authenticated API (confirmed 401 on the real endpoint), no free JSON path exists.
 **Darwinbox's endpoint is real** (verified live via curl with a browser User-Agent) but sits

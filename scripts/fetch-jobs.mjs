@@ -49,18 +49,23 @@ const BUDGET    = Number(process.env.APIFY_BUDGET_USD || 2.0);
 -------------------------------------------------------------------*/
 const SOURCES = {
   /* ---------- FREE. No key, no account, no credits. On by default. ---------- */
-  greenhouse:     { label: "Greenhouse",     free: true, fetch: () => free.greenhouse(free.COMPANIES.greenhouse) },
-  lever:          { label: "Lever",          free: true, fetch: () => free.lever(free.COMPANIES.lever) },
-  ashby:          { label: "Ashby",          free: true, fetch: () => free.ashby(free.COMPANIES.ashby) },
-  smartrecruiters:{ label: "SmartRecruiters",free: true, fetch: () => free.smartrecruiters(free.COMPANIES.smartrecruiters) },
-  remoteok:       { label: "RemoteOK",       free: true, fetch: () => free.remoteok() },
+  // greenhouse/lever/ashby/smartrecruiters/keka return every opening at a
+  // company; remoteok/arbeitnow/workday return their entire board. None of
+  // them take a search term — free.relevant() filters the raw rows by
+  // title against every configured TERM (not just the one the outer loop
+  // happens to be on; see the `perCompany` skip-repeat-fetches list below).
+  greenhouse:     { label: "Greenhouse",     free: true, fetch: async () => free.relevant(await free.greenhouse(free.COMPANIES.greenhouse), TERMS.join(" ")) },
+  lever:          { label: "Lever",          free: true, fetch: async () => free.relevant(await free.lever(free.COMPANIES.lever), TERMS.join(" ")) },
+  ashby:          { label: "Ashby",          free: true, fetch: async () => free.relevant(await free.ashby(free.COMPANIES.ashby), TERMS.join(" ")) },
+  smartrecruiters:{ label: "SmartRecruiters",free: true, fetch: async () => free.relevant(await free.smartrecruiters(free.COMPANIES.smartrecruiters), TERMS.join(" ")) },
+  remoteok:       { label: "RemoteOK",       free: true, fetch: async () => free.relevant(await free.remoteok(), TERMS.join(" ")) },
   remotive:       { label: "Remotive",       free: true, fetch: t => free.remotive(t) },
-  arbeitnow:      { label: "Arbeitnow",      free: true, fetch: () => free.arbeitnow() },
+  arbeitnow:      { label: "Arbeitnow",      free: true, fetch: async () => free.relevant(await free.arbeitnow(), TERMS.join(" ")) },
   hn:             { label: "HN Hiring",      free: true, fetch: t => free.hnWhoIsHiring(t) },
   jobicy:         { label: "Jobicy",         free: true, fetch: t => free.jobicy(t) },
   himalayas:      { label: "Himalayas",      free: true, fetch: t => free.himalayas(t) },
   wwr:            { label: "WWR",            free: true, fetch: t => free.weworkremotely(t) },
-  workday:        { label: "Workday",        free: true, fetch: () => free.workday() },
+  workday:        { label: "Workday",        free: true, fetch: async () => free.relevant(await free.workday(), TERMS.join(" ")) },
   // Indian ATS — Keka confirmed working end to end. Freshteam and Zoho
   // Recruit require an authenticated API (401 on the real endpoint, no
   // public JSON alternative) and aren't registered at all. Darwinbox's
@@ -70,7 +75,7 @@ const SOURCES = {
   // it would silently contribute 0 jobs every day. The function still
   // lives in free-sources.mjs and shows up in verify-sources.mjs in case
   // that ever becomes usable (e.g. via a browser-based fetch).
-  keka:           { label: "Keka",           free: true, fetch: () => free.keka() },
+  keka:           { label: "Keka",           free: true, fetch: async () => free.relevant(await free.keka(), TERMS.join(" ")) },
 
   /* ---------- APIFY. Costs credits. Off by default now. ---------- */
   // Indeed. Broadest coverage for India. Own input shape.
@@ -157,9 +162,22 @@ if (WANTED.some(id => SOURCES[id] && !SOURCES[id].free) && !TOKEN) {
 
 /* ---------------- salary: pull ₹ figures out of free text ---------------- */
 const MONTH = 1, YEAR = 1 / 12;
+// No live FX feed here — this is a rough, occasionally-stale constant so a
+// "$120,000 a year" listing (RemoteOK/Jobicy/Himalayas all report in USD)
+// doesn't get compared against ₹ figures as if the number were already
+// rupees. Being off by a few percent on the exchange rate is a minor
+// inaccuracy; treating $120,000 as ₹120,000 is off by 88x and quietly
+// filters the highest-paying listings out of the queue.
+const USD_INR = 88;
+
 function parsePay(text = "") {
   if (!text || /^n\/?a$/i.test(String(text).trim())) return { lo: null, hi: null, label: "Not stated" };
   const t = String(text).replace(/,/g, "");
+
+  // Currency has to be decided before any number is parsed — a bare
+  // number means nothing without knowing which currency it's in.
+  const isUsd = /\$|USD/i.test(t) && !/₹/.test(t);
+  const fx = isUsd ? USD_INR : 1;
 
   // Wellfound style: "₹3L–₹4L a year", "₹8L–₹24L a year"
   const lakh = t.match(/₹\s*(\d+(?:\.\d+)?)\s*L\s*(?:-|–|to)?\s*(?:₹\s*(\d+(?:\.\d+)?)\s*L)?/i);
@@ -175,11 +193,16 @@ function parsePay(text = "") {
     const b = lpa[2] ? Number(lpa[2]) * 1e5 * YEAR : a;
     return { lo: Math.round(a), hi: Math.round(b), label: String(text).trim().slice(0, 60) };
   }
-  const per = t.match(/(?:₹|rs\.?\s*)?(\d{4,9}(?:\.\d+)?)\s*(?:-|–|to)?\s*(?:₹|rs\.?\s*)?(\d{4,9}(?:\.\d+)?)?\s*(?:per|a|\/)\s*(month|year|annum|yr|mo)/i);
+  // "$50,000 - $80,000 a year": each number needs its own optional currency
+  // prefix. Without "$" as an option here, "$50000 - $80000" fails to match
+  // starting at the first number (the bare "$" blocks the optional-prefix
+  // group), so the regex engine skips ahead and matches only "$80000 a
+  // year" — silently dropping the low end of every USD range.
+  const per = t.match(/(?:₹|\$|rs\.?\s*)?(\d{4,9}(?:\.\d+)?)\s*(?:-|–|to)?\s*(?:₹|\$|rs\.?\s*)?(\d{4,9}(?:\.\d+)?)?\s*(?:per|a|\/)\s*(month|year|annum|yr|mo)/i);
   if (per) {
     const unit = /mo/i.test(per[3]) ? MONTH : YEAR;
-    const a = Number(per[1]) * unit;
-    const b = per[2] ? Number(per[2]) * unit : a;
+    const a = Number(per[1]) * unit * fx;
+    const b = per[2] ? Number(per[2]) * unit * fx : a;
     return { lo: Math.round(a), hi: Math.round(b), label: String(text).trim().slice(0, 60) };
   }
   return { lo: null, hi: null, label: String(text).trim().slice(0, 60) || "Not stated" };
@@ -320,9 +343,10 @@ for (const id of WANTED) {
     continue;
   }
   tally[id] = 0;
-  // Company-board sources return everything for a company in one call —
-  // running them per search term would just fetch the same rows N times.
-  const perCompany = ["greenhouse","lever","ashby","smartrecruiters","remoteok","arbeitnow"].includes(id);
+  // These sources' fetch() ignores whatever term the outer loop passes in
+  // (they filter against the full TERMS list internally via free.relevant())
+  // — running them again per search term would just refetch the same rows.
+  const perCompany = ["greenhouse","lever","ashby","smartrecruiters","remoteok","arbeitnow","workday","keka"].includes(id);
   const terms = perCompany ? [TERMS[0]] : TERMS;
   for (const term of terms) {
     if (!src.free && !canAfford()) {

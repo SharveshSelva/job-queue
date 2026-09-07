@@ -21,6 +21,24 @@ async function getJSON(url, opts = {}) {
 }
 
 /* ------------------------------------------------------------------
+   RELEVANCE FILTER
+   Some sources have no way to search server-side: RemoteOK, Arbeitnow and
+   Workday return their entire board regardless of what you ask for, and
+   the company-board sources (Greenhouse/Lever/Ashby/SmartRecruiters/Keka)
+   return every opening at a company — sales, HR, finance included, not
+   just engineering. Without this, "React Developer" as a search term does
+   nothing for those sources and they dump their whole inventory into the
+   queue. Same word-match approach weworkremotely() and hnWhoIsHiring()
+   already use below — not exact, but turns "every job at the company"
+   into "the ones actually worth swiping on."
+-------------------------------------------------------------------*/
+export function relevant(rows, terms) {
+  const needle = String(terms).toLowerCase().split(/\s+/).filter(w => w.length > 3);
+  if (!needle.length) return rows;
+  return rows.filter(r => needle.some(w => String(r.title || "").toLowerCase().includes(w)));
+}
+
+/* ------------------------------------------------------------------
    COMPANY SLUGS
    The slug is the path segment on the company's careers URL, e.g.
    boards.greenhouse.io/razorpaysoftwareprivatelimited  ->  that last part.
@@ -176,6 +194,16 @@ export async function remotive(term) {
   }));
 }
 
+// ⚠️ created_at is not a trustworthy "posted" date. It's the only date
+// field this API exposes, correctly parsed as unix seconds — but checked
+// live, it clusters within minutes of whenever the API is called, for
+// listings across wildly different companies and roles. That reads as
+// "last touched by Arbeitnow's own pipeline," not "originally posted by
+// the employer." Harmless for freshness *within* one run (every listing
+// looks equally new), but a listing's stamped date is set once on first
+// sight (see the `seen` dedupe in fetch-jobs.mjs) — so an old listing
+// this app happens to see for the first time today gets permanently
+// mis-dated as posted today.
 export async function arbeitnow() {
   const d = await getJSON("https://www.arbeitnow.com/api/job-board-api");
   return (d.data || []).map(j => ({
@@ -211,7 +239,13 @@ export async function hnWhoIsHiring(term) {
     .map(c => {
       const text = c.text.replace(/<[^>]+>/g, " ").replace(/&#x2F;/g, "/").replace(/&amp;/g, "&");
       const firstLine = text.trim().split(/[|\n]/)[0].trim().slice(0, 110);
-      const link = (c.text.match(/https?:\/\/[^\s"'<>]+/) || [])[0];
+      // Must match against the decoded `text`, not raw `c.text` — HN's API
+      // HTML-entity-encodes every "/", so a raw comment has "https:&#x2F;
+      // &#x2F;example.com", not "https://example.com". Matching the raw
+      // field means "https?:\/\/" never matches anything, every comment
+      // gets dropped by the `c.link &&` filter below, and this source
+      // always returns zero jobs regardless of search term.
+      const link = (text.match(/https?:\/\/[^\s"'<>]+/) || [])[0];
       return { text, firstLine, link, created: c.created_at };
     })
     .filter(c => c.link && needle.some(w => c.text.toLowerCase().includes(w)))
@@ -251,6 +285,11 @@ export async function jobicy(term) {
   }));
 }
 
+// ⚠️ pubDate has the same problem as Arbeitnow's created_at, worse: every
+// listing checked live came back within minutes of request time regardless
+// of the job, so treat "posted" for this source as "first seen by us," not
+// "actually posted then." See the Arbeitnow comment above for what that
+// does and doesn't break.
 export async function himalayas(term) {
   const d = await getJSON(`https://himalayas.app/jobs/api?limit=50&search=${encodeURIComponent(term)}`);
   return (d.jobs || []).map(j => ({
