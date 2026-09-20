@@ -391,21 +391,26 @@ for (const id of WANTED) {
     if (!src.free) {
       // ~$0.02 to start a run + ~$0.012 per result, matching observed
       // billing. Cost is computed on the raw actor response — Apify bills
-      // for what it returned regardless of what we keep, so this has to
-      // happen before relevant() filters rows for storage below, not after.
+      // for what it returned regardless of what we keep.
       const cost = 0.02 + rows.length * 0.012;
       usage.spentUsd += cost;
       usage.runs += 1;
       if (!canAfford()) console.log(`  ! budget reserve reached — remaining paid calls will be skipped`);
-      // Apify actors have no title filter the way Remotive/Jobicy's
-      // search=/tag= params do — same relevant() pass as every free source.
-      rows = free.relevant(rows, term);
     }
 
     let fresh = 0;
     for (const r of rows) {
       const j = normalise(r, term, r._src || src.label);
-      if (!j || seen.has(j.url)) continue;   // keeps the original first_seen
+      if (!j) continue;
+      // Apify actors have no title filter the way Remotive/Jobicy's
+      // search=/tag= params do — same relevant() check every free source
+      // gets. Runs against j.title (post-normalise), not the raw row:
+      // raw Apify rows don't all use "title" as the field name (misceres/
+      // indeed-scraper calls it positionName), so checking the raw row
+      // directly silently dropped 100% of every Apify source's results —
+      // billed for, then discarded, without ever showing up as a failure.
+      if (!src.free && !free.relevant([j], term).length) continue;
+      if (seen.has(j.url)) continue;   // keeps the original first_seen
       seen.set(j.url, j);
       fresh++; added++; tally[id]++;
     }
