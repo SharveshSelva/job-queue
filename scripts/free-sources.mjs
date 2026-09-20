@@ -70,6 +70,9 @@ const RELEVANT_EXCLUDE = [
   // clearly non-technical, would otherwise slip through "engineer/developer"
   "recruiter", "account executive", "business development", "sales manager",
   "hr ", "finance", "legal", "office assistant", "controlling",
+  // seniority, not discipline — "no senior" — "sr." catches the abbreviated
+  // form without the bare 2-letter "sr" substring risking false hits
+  "senior", "sr.", "sr ",
 ];
 
 export function relevant(rows, terms) {
