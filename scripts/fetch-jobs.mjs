@@ -67,10 +67,16 @@ const SOURCES = {
   // comes back the same way it does for the sources with no search at all.
   remotive:       { label: "Remotive",       free: true, fetch: async t => free.relevant(await free.remotive(t), t) },
   arbeitnow:      { label: "Arbeitnow",      free: true, fetch: async () => free.relevant(await free.arbeitnow(), TERMS.join(" ")) },
-  hn:             { label: "HN Hiring",      free: true, fetch: t => free.hnWhoIsHiring(t) },
+  // WWR and HN each do their own best-effort keyword match internally
+  // (kept as the first pass — cheaper than parsing every comment/RSS item
+  // just to throw it away) but neither one ever saw RELEVANT_EXCLUDE: a
+  // "Senior ..." title from WWR was still showing up after every other
+  // source had it filtered out, because WWR's own filter doesn't know
+  // that list exists. Same relevant() pass as everything else now.
+  hn:             { label: "HN Hiring",      free: true, fetch: async t => free.relevant(await free.hnWhoIsHiring(t), t) },
   jobicy:         { label: "Jobicy",         free: true, fetch: async t => free.relevant(await free.jobicy(t), t) },
   himalayas:      { label: "Himalayas",      free: true, fetch: async t => free.relevant(await free.himalayas(t), t) },
-  wwr:            { label: "WWR",            free: true, fetch: t => free.weworkremotely(t) },
+  wwr:            { label: "WWR",            free: true, fetch: async t => free.relevant(await free.weworkremotely(t), t) },
   workday:        { label: "Workday",        free: true, fetch: async () => free.relevant(await free.workday(), TERMS.join(" ")) },
   // Indian ATS — Keka confirmed working end to end. Freshteam and Zoho
   // Recruit require an authenticated API (401 on the real endpoint, no
