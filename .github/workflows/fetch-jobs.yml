@@ -38,6 +38,10 @@ jobs:
           MAX_ITEMS_PER_SOURCE: ${{ vars.MAX_ITEMS_PER_SOURCE || '25' }}
           MAX_AGE_DAYS: ${{ vars.MAX_AGE_DAYS || '45' }}
           APIFY_BUDGET_USD: ${{ vars.APIFY_BUDGET_USD || '2.0' }}
+          # One-off cleanup flag — set the PRUNE_STALE repo variable to
+          # "true", run the workflow once by hand, then unset it. Leaving
+          # it on would re-run the prune every scheduled run for no reason.
+          PRUNE_STALE: ${{ vars.PRUNE_STALE }}
         run: node scripts/fetch-jobs.mjs
 
       - name: Commit if changed

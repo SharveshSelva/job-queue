@@ -21,32 +21,55 @@ async function getJSON(url, opts = {}) {
 }
 
 /* ------------------------------------------------------------------
-   RELEVANCE FILTER
+   RELEVANCE FILTER — inverted from a narrow allow-list to a broad
+   positive signal narrowed only by explicit exclusions.
+
    Some sources have no way to search server-side: RemoteOK, Arbeitnow and
    Workday return their entire board regardless of what you ask for, and
    the company-board sources (Greenhouse/Lever/Ashby/SmartRecruiters/Keka)
    return every opening at a company — sales, HR, finance included, not
-   just engineering. Without this, "React Developer" as a search term does
-   nothing for those sources and they dump their whole inventory into the
-   queue. Same word-match approach weworkremotely() and hnWhoIsHiring()
-   already use below — not exact, but turns "every job at the company"
-   into "the ones actually worth swiping on."
+   just engineering. Others (Remotive/Jobicy/Himalayas) do filter
+   server-side, but checked live that filtering is loose enough to return
+   "Customer Success Manager" for a software-engineer search. This runs on
+   all of them.
 
-   Real engineering roles are often titled "Software Development Engineer",
-   "Fullstack Engineer", "SDE II", "SDET" rather than literally containing
-   "developer" — RELEVANT_EXTRA widens recall for those regardless of what
-   SEARCH_TERMS says. But "engineer" alone also matches whole job families
-   that are pre-sales/support, not software: Solutions Engineer, Customer
-   Success Engineer, GTM Engineer, Value Engineer are real, common titles
-   at exactly the SaaS companies in COMPANIES. RELEVANT_EXCLUDE (checked
-   first, as phrases) keeps those out without narrowing "engineer" itself.
+   The old version only accepted a title if it matched a narrow needle
+   derived from SEARCH_TERMS ("react", "developer", "frontend") — real
+   engineering roles worded differently ("Backend Engineer", "SDE II",
+   "AI Engineer") got dropped as noise. RELEVANT_EXTRA is now a broad,
+   standing definition of "looks like a software engineering role",
+   independent of whatever SEARCH_TERMS happens to be set to — the goal
+   is "all SDE/software roles", not "whatever today's search phrase says".
+   RELEVANT_EXCLUDE (checked first, as phrases, so it wins on conflict)
+   carves out three specific things that pure keyword matching can't tell
+   apart from real software roles: embedded/hardware engineering (a
+   different discipline, not excluded because it's bad — just not what
+   "software engineer" means here), pre-sales/support titles that contain
+   "engineer" without being software roles (Solutions Engineer, Customer
+   Success Engineer — real, common at SaaS companies), and a short list of
+   obviously non-technical titles (recruiter, sales, HR, finance, legal...)
+   that would otherwise slip through the broad "engineer/developer" net.
 -------------------------------------------------------------------*/
-// "fullstack" alone misses "Full Stack Builder" / "Full-Stack Engineer" —
-// substring matching needs the actual spelling, spaces and hyphens included.
-const RELEVANT_EXTRA = ["engineer", "fullstack", "full stack", "full-stack", "sde", "sdet"];
+const RELEVANT_EXTRA = [
+  "engineer", "developer", "software",
+  "fullstack", "full stack", "full-stack",
+  "sde", "sdet",
+];
+
 const RELEVANT_EXCLUDE = [
+  // embedded / hardware — a different discipline, not "software engineer"
+  "embedded", "firmware", "rtos", "fpga", "verilog", "vhdl", "plc",
+  "microcontroller", "hardware engineer", "pcb", "vlsi", "asic",
+  "device driver", "bsp",
+  // pre-sales / support wearing an "engineer" title
+  // ("solution engineer" added alongside the given "solutions engineer" —
+  // real titles use both the singular and plural form for this same role)
   "customer success", "solutions engineer", "solution engineer",
   "sales engineer", "gtm engineer", "value engineer", "support engineer",
+  "presales", "technical account manager",
+  // clearly non-technical, would otherwise slip through "engineer/developer"
+  "recruiter", "account executive", "business development", "sales manager",
+  "hr ", "finance", "legal", "office assistant", "controlling",
 ];
 
 export function relevant(rows, terms) {

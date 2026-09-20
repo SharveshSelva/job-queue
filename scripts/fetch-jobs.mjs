@@ -328,6 +328,18 @@ try {
   console.log(`Loaded ${existing.length} cached listings.`);
 } catch { console.log("No cache — starting fresh."); }
 
+// One-time cleanup, off by default. Dedupe means a URL already in the
+// cache never gets reprocessed, so a relevant()/RELEVANT_EXCLUDE change
+// only ever affects new fetches going forward — every filter change this
+// app has had so far needed a manual one-off script to reach the already-
+// cached rows. PRUNE_STALE formalizes that: re-runs relevant() against
+// every cached listing's title regardless of source, once, when set.
+if (/^(1|true|yes)$/i.test(process.env.PRUNE_STALE || "")) {
+  const before = existing.length;
+  existing = free.relevant(existing, TERMS.join(" "));
+  console.log(`PRUNE_STALE: ${before} -> ${existing.length} cached listings (dropped ${before - existing.length}).`);
+}
+
 /* ---- Apify spend ledger. Resets each calendar month. ---- */
 const thisMonth = new Date().toISOString().slice(0, 7);
 let usage = { month: thisMonth, spentUsd: 0, runs: 0 };
@@ -377,11 +389,17 @@ for (const id of WANTED) {
     catch (e) { console.log(`failed (${e.message})`); continue; }
 
     if (!src.free) {
-      // ~$0.02 to start a run + ~$0.012 per result, matching observed billing
+      // ~$0.02 to start a run + ~$0.012 per result, matching observed
+      // billing. Cost is computed on the raw actor response — Apify bills
+      // for what it returned regardless of what we keep, so this has to
+      // happen before relevant() filters rows for storage below, not after.
       const cost = 0.02 + rows.length * 0.012;
       usage.spentUsd += cost;
       usage.runs += 1;
       if (!canAfford()) console.log(`  ! budget reserve reached — remaining paid calls will be skipped`);
+      // Apify actors have no title filter the way Remotive/Jobicy's
+      // search=/tag= params do — same relevant() pass as every free source.
+      rows = free.relevant(rows, term);
     }
 
     let fresh = 0;
